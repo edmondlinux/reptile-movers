@@ -2,12 +2,12 @@ import { useEffect, useState } from "react";
 import { Package, ArrowRight, Search, X } from "lucide-react";
 import { useShipmentStore } from "../stores/useShipmentStore";
 
-// Add your image URLs here
+// Reptile and nature themed background images
 const backgroundImages = [
-	"https://images.pexels.com/photos/262353/pexels-photo-262353.jpeg",
-	"https://images.pexels.com/photos/6017740/pexels-photo-6017740.jpeg",
-	"https://images.pexels.com/photos/906982/pexels-photo-906982.jpeg",
-	"https://images.pexels.com/photos/17206212/pexels-photo-17206212.jpeg",
+	"https://images.pexels.com/photos/45853/grey-crowned-crane-bird-crane-animal-45853.jpeg",
+	"https://images.pexels.com/photos/1059823/pexels-photo-1059823.jpeg",
+	"https://images.pexels.com/photos/34426/snake-rainbow-boa-reptile-scale.jpg",
+	"https://images.pexels.com/photos/1059823/pexels-photo-1059823.jpeg",
 ];
 
 const HeroSection = () => {
@@ -79,12 +79,12 @@ const HeroSection = () => {
 			{/* Main Content */}
 			<div className="relative z-20 text-center max-w-4xl mx-auto px-4">
 				<h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight">
-					Global Logistics
-					<span className="text-emerald-400 block">Solutions</span>
+					Reptile Movers
+					<span className="text-emerald-400 block">EU</span>
 				</h1>
 				<p className="text-xl md:text-2xl mb-8 text-gray-300 max-w-2xl mx-auto">
-					Connecting businesses worldwide with reliable freight forwarding,
-					shipping, and supply chain solutions you can trust.
+					Specialized reptile transportation services across Europe and Asia. 
+					Safe, climate-controlled shipping for your precious reptiles to China, Malaysia, Korea, and beyond.
 				</p>
 				<div className="flex flex-col gap-4 justify-center">
 					{!showTrackingInput && (

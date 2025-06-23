@@ -18,7 +18,7 @@ const Navbar = () => {
 					{/* Logo */}
 					<Link to='/' className='text-xl sm:text-2xl font-bold text-emerald-400 items-center space-x-2 flex'>
 						<Truck className='w-6 h-6 sm:w-8 sm:h-8' />
-						<span>Global Logistics</span>
+						<span>Reptile Movers EU</span>
 					</Link>
 
 					{/* Desktop Navigation */}
