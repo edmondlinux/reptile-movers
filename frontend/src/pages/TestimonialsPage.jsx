@@ -6,113 +6,111 @@ import TestimonialCard from "../components/TestimonialCard";
 const TestimonialsPage = () => {
   const featuredTestimonials = [
     {
-      name: "Sarah Johnson",
-      company: "TechCorp Inc.",
-      position: "Supply Chain Director",
-      quote: "GlobalLogistics has completely transformed our supply chain operations. Their real-time tracking system and reliable delivery network have helped us improve our customer satisfaction by 40%. The team's proactive communication and problem-solving approach make them an invaluable partner.",
+      name: "Marco Rossi",
+      company: "European Reptile Breeders",
+      position: "Head Breeder",
+      quote: "Reptile Movers EU has completely transformed our international shipping operations. Their climate-controlled transport and real-time monitoring have helped us achieve 99.9% healthy arrival rates to Asian markets. The team's expertise in reptile physiology and stress-free handling makes them irreplaceable.",
       rating: 5,
-      industry: "Technology",
-      shipmentVolume: "500+ monthly",
-      partnership: "3 years",
-      results: ["40% faster delivery", "99.8% on-time rate", "30% cost reduction"]
-    },
-    {
-      name: "Michael Chen",
-      company: "RetailMax",
-      position: "Logistics Manager",
-      quote: "Working with GlobalLogistics for our international shipping needs has been a game-changer. Their customs clearance expertise and global network have enabled us to expand into 15 new markets seamlessly. Outstanding service that scales with our business growth.",
-      rating: 5,
-      industry: "Retail",
-      shipmentVolume: "1000+ monthly",
+      industry: "Reptile Breeding",
+      shipmentVolume: "200+ monthly",
       partnership: "4 years",
-      results: ["15 new markets", "Zero customs delays", "25% growth in international sales"]
+      results: ["99.9% healthy arrivals", "Zero CITES violations", "30% faster customs clearance"]
     },
     {
-      name: "Emma Rodriguez",
-      company: "AutoParts Plus",
-      position: "Operations Director",
-      quote: "Professional, efficient, and incredibly reliable. GlobalLogistics has been our trusted logistics partner for over 5 years. Their warehouse management system and just-in-time delivery service have helped us reduce inventory costs while maintaining 99.9% stock availability.",
+      name: "Lisa Wang",
+      company: "Asia Exotic Imports",
+      position: "Import Director",
+      quote: "Working with Reptile Movers EU for our European reptile imports has been exceptional. Their CITES expertise and temperature-controlled logistics have enabled us to expand our European supplier network to 25+ breeders. Outstanding service with perfect documentation every time.",
       rating: 5,
-      industry: "Automotive",
-      shipmentVolume: "2000+ monthly",
-      partnership: "5 years",
-      results: ["20% inventory reduction", "99.9% stock availability", "15% cost savings"]
+      industry: "Exotic Import",
+      shipmentVolume: "150+ monthly",
+      partnership: "3 years",
+      results: ["25+ European suppliers", "100% documentation accuracy", "40% growth in European imports"]
+    },
+    {
+      name: "Johan Andersson",
+      company: "Nordic Reptiles",
+      position: "Operations Manager",
+      quote: "The precision handling of our sensitive gecko shipments to Malaysia and Korea is remarkable. Reptile Movers EU understands that each species has unique requirements, and their specialized transport containers maintain perfect conditions throughout the journey.",
+      rating: 5,
+      industry: "Specialized Breeding",
+      shipmentVolume: "100+ monthly",
+      partnership: "2 years",
+      results: ["100% gecko survival rate", "15% faster delivery times", "Zero temperature fluctuations"]
     }
   ];
 
   const allTestimonials = [
     {
-      name: "David Kim",
-      company: "FashionForward",
-      quote: "Their e-commerce fulfillment service is phenomenal. Orders are processed quickly and customers are always satisfied with the fast delivery times.",
+      name: "Sophie Dubois",
+      company: "French Gecko Farm",
+      quote: "Excellent service to Korea and other Asian markets. Full CITES support and healthy arrivals every time. Their climate control systems are the best in the industry.",
       rating: 5,
       companyLogo: true
     },
     {
-      name: "Lisa Thompson",
-      company: "MedSupply Corp",
-      quote: "Critical medical supplies require special handling, and GlobalLogistics delivers every time. Their temperature-controlled logistics are essential for our business.",
+      name: "Chen Wei",
+      company: "Shanghai Reptile Center",
+      quote: "Reliable European imports with perfect temperature control. Reptile Movers EU makes international reptile trade seamless and stress-free for our animals.",
       rating: 5,
       companyLogo: true
     },
     {
-      name: "Ahmed Hassan",
-      company: "Global Electronics",
-      quote: "Excellent international shipping services. They handle all the documentation and customs procedures seamlessly. Highly recommend for overseas shipments.",
+      name: "Heinrich Weber",
+      company: "German Ball Python Breeders",
+      quote: "Professional handling of our ball python shipments to China. Their specialized containers and monitoring systems ensure every snake arrives in perfect condition.",
       rating: 5,
       companyLogo: true
     },
     {
-      name: "Jennifer Martinez",
-      company: "Fresh Foods Inc.",
-      quote: "Cold chain logistics at its finest. Our perishable goods arrive fresh and on time thanks to their specialized refrigerated transport network.",
+      name: "Takeshi Yamamoto",
+      company: "Tokyo Exotic Pets",
+      quote: "Fast and safe delivery from Europe to Japan. Reptile Movers EU understands Japanese import requirements and handles all documentation flawlessly.",
       rating: 5,
       companyLogo: true
     },
     {
-      name: "Robert Wilson",
-      company: "Construction Pro",
-      quote: "Heavy machinery and construction materials require expertise. GlobalLogistics handles our oversized shipments with precision and care every time.",
+      name: "Anna Kowalski",
+      company: "Polish Chameleon Farm",
+      quote: "Temperature-controlled transport at its finest. Our chameleons arrive stress-free and healthy thanks to their specialized climate chambers.",
       rating: 5,
       companyLogo: true
     },
     {
-      name: "Maria Garcia",
-      company: "Artisan Crafts",
-      quote: "As a small business, their flexible solutions and competitive pricing have been crucial for our growth. Personal service with enterprise capabilities.",
+      name: "David Park",
+      company: "Korean Reptile Distributors",
+      quote: "Reliable European reptile imports with perfect health certificates. Their veterinary partnerships ensure all animals meet our strict health standards.",
       rating: 5,
       companyLogo: true
     },
     {
-      name: "Tom Anderson",
-      company: "Chemical Solutions",
-      quote: "Hazardous materials shipping requires specialized knowledge. Their certified team ensures compliance and safety in every shipment. Exceptional service.",
+      name: "Isabella Santos",
+      company: "Iberian Reptiles",
+      quote: "Specialized handling for venomous species shipments to Asian research facilities. Reptile Movers EU has the expertise and permits for the most challenging transports.",
       rating: 5,
       companyLogo: true
     },
     {
-      name: "Priya Sharma",
-      company: "BookWorld",
-      quote: "Fast, reliable, and cost-effective shipping for our book distribution. Their automated sorting and tracking system is impressive. Great partnership.",
+      name: "Liu Ming",
+      company: "Beijing Reptile Research",
+      quote: "Scientific specimen transport requires precision. Their research animal protocols and university partnerships make them our preferred European courier.",
+      rating: 5,
+      companyLogo: true
+    },
+    {
+      name: "Erik Nilsson",
+      company: "Scandinavian Serpents",
+      quote: "Cross-border reptile transport within Europe and to Asia. Excellent knowledge of EU regulations and Asian import requirements.",
       rating: 5,
       companyLogo: true
     }
   ];
 
-  const industries = [
-    { name: "Technology", count: "150+ clients", icon: "💻" },
-    { name: "Retail & E-commerce", count: "300+ clients", icon: "🛍️" },
-    { name: "Healthcare", count: "80+ clients", icon: "🏥" },
-    { name: "Automotive", count: "120+ clients", icon: "🚗" },
-    { name: "Food & Beverage", count: "200+ clients", icon: "🍎" },
-    { name: "Manufacturing", count: "180+ clients", icon: "🏭" }
-  ];
-
   const stats = [
-    { number: "98%", label: "Customer Satisfaction", icon: "⭐" },
-    { number: "1000+", label: "Happy Clients", icon: "😊" },
-    { number: "50M+", label: "Successful Deliveries", icon: "📦" },
-    { number: "99.8%", label: "On-Time Delivery", icon: "⏰" }
+    { number: "15,000+", label: "Reptiles Safely Transported", icon: "🦎" },
+    { number: "99.9%", label: "Healthy Arrival Rate", icon: "💚" },
+    { number: "12+", label: "Asian Countries Served", icon: "🌏" },
+    { number: "48hr", label: "Average Delivery Time", icon: "⏰" }
   ];
 
   return (
@@ -128,11 +126,11 @@ const TestimonialsPage = () => {
             className="text-center"
           >
             <h1 className="text-4xl md:text-6xl font-bold mb-6">
-              Client <span className="text-emerald-400">Testimonials</span>
+              Client <span className="text-emerald-400">Success Stories</span>
             </h1>
             <p className="text-xl md:text-2xl text-gray-300 max-w-3xl mx-auto">
-              Discover why thousands of businesses trust GlobalLogistics 
-              for their shipping and logistics needs.
+              Discover why European breeders and Asian importers trust Reptile Movers EU 
+              for safe, reliable reptile transportation across continents.
             </p>
           </motion.div>
         </div>
@@ -141,18 +139,18 @@ const TestimonialsPage = () => {
       {/* Stats Section */}
       <section className="py-16 bg-emerald-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
             {stats.map((stat, index) => (
               <motion.div
                 key={index}
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5, delay: index * 0.1 }}
-                className="text-center bg-white rounded-xl p-6 shadow-lg"
+                className="text-center"
               >
-                <div className="text-4xl mb-3">{stat.icon}</div>
-                <div className="text-3xl font-bold text-gray-900 mb-2">{stat.number}</div>
-                <div className="text-gray-600">{stat.label}</div>
+                <div className="text-4xl mb-2">{stat.icon}</div>
+                <div className="text-3xl md:text-4xl font-bold text-emerald-600 mb-2">{stat.number}</div>
+                <div className="text-gray-600 font-medium">{stat.label}</div>
               </motion.div>
             ))}
           </div>
@@ -170,7 +168,7 @@ const TestimonialsPage = () => {
           >
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Featured Success Stories</h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              In-depth case studies showcasing real results from our valued clients
+              In-depth case studies showcasing real results from our valued reptile breeding and importing partners
             </p>
           </motion.div>
 
@@ -213,6 +211,17 @@ const TestimonialsPage = () => {
                         </div>
                       </div>
                     </div>
+                    <div className="mt-6">
+                      <h6 className="font-semibold text-gray-900 mb-3">Key Results:</h6>
+                      <div className="space-y-2">
+                        {testimonial.results.map((result, resultIndex) => (
+                          <div key={resultIndex} className="flex items-center text-sm">
+                            <CheckCircle className="w-4 h-4 text-emerald-600 mr-2" />
+                            <span className="text-gray-700">{result}</span>
+                          </div>
+                        ))}
+                      </div>
+                    </div>
                   </div>
                   <div className="bg-white rounded-xl p-6">
                     <h5 className="font-semibold text-gray-900 mb-4">Partnership Details</h5>
@@ -230,17 +239,6 @@ const TestimonialsPage = () => {
                         <span className="font-medium">{testimonial.partnership}</span>
                       </div>
                     </div>
-                    <div className="mt-6">
-                      <h6 className="font-semibold text-gray-900 mb-3">Key Results:</h6>
-                      <div className="space-y-2">
-                        {testimonial.results.map((result, resultIndex) => (
-                          <div key={resultIndex} className="flex items-center text-sm">
-                            <CheckCircle className="w-4 h-4 text-emerald-600 mr-2" />
-                            <span className="text-gray-700">{result}</span>
-                          </div>
-                        ))}
-                      </div>
-                    </div>
                   </div>
                 </div>
               </motion.div>
@@ -249,40 +247,8 @@ const TestimonialsPage = () => {
         </div>
       </section>
 
-      {/* Industry Coverage */}
-      <section className="py-20 bg-gray-100">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8 }}
-            className="text-center mb-16"
-          >
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Industries We Serve</h2>
-            <p className="text-xl text-gray-600">
-              Trusted by businesses across diverse industries
-            </p>
-          </motion.div>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {industries.map((industry, index) => (
-              <motion.div
-                key={index}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.5, delay: index * 0.1 }}
-                className="bg-white rounded-xl p-6 text-center shadow-lg hover:shadow-xl transition duration-300"
-              >
-                <div className="text-4xl mb-4">{industry.icon}</div>
-                <h3 className="text-xl font-semibold text-gray-900 mb-2">{industry.name}</h3>
-                <p className="text-emerald-600 font-medium">{industry.count}</p>
-              </motion.div>
-            ))}
-          </div>
-        </div>
-      </section>
-
       {/* All Testimonials */}
-      <section className="py-20 bg-white">
+      <section className="py-20 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -292,7 +258,7 @@ const TestimonialsPage = () => {
           >
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">What Our Clients Say</h2>
             <p className="text-xl text-gray-600">
-              Real feedback from real businesses
+              Real feedback from European breeders and Asian importers
             </p>
           </motion.div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -326,12 +292,12 @@ const TestimonialsPage = () => {
           >
             <h2 className="text-3xl md:text-4xl font-bold mb-6">Join Our Success Stories</h2>
             <p className="text-xl mb-8">
-              Ready to experience the GlobalLogistics difference? 
-              Let us help you achieve your logistics goals.
+              Ready to experience safe, reliable reptile transport from Europe to Asia? 
+              Let us help you expand your breeding or import business.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <button className="bg-white text-emerald-600 hover:bg-gray-100 px-8 py-4 rounded-lg font-semibold text-lg transition duration-300">
-                Get Your Quote
+                Get Shipping Quote
               </button>
               <button className="border-2 border-white hover:bg-white hover:text-emerald-600 px-8 py-4 rounded-lg font-semibold text-lg transition duration-300">
                 Schedule Consultation
