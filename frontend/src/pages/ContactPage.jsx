@@ -83,26 +83,26 @@ const ContactPage = () => {
     {
       city: "Amsterdam",
       address: "European Headquarters, Netherlands",
-      phone: "info@reptilemoverseu.com",
-      email: "info@reptilemoverseu.com"
+      phone: "support@reptilemovers.site",
+      email: "support@reptilemovers.site"
     },
     {
-      city: "Berlin",
-      address: "Central Europe Hub, Germany",
-      phone: "berlin@reptilemoverseu.com",
-      email: "berlin@reptilemoverseu.com"
+      city: "Rome",
+      address: "Central Europe Hub, Rome",
+      phone: "support@reptilemovers.site",
+      email: "support@reptilemovers.site"
     },
     {
       city: "Singapore",
       address: "Asian Operations Center",
-      phone: "asia@reptilemoverseu.com",
-      email: "asia@reptilemoverseu.com"
+      phone: "support@reptilemovers.site",
+      email: "support@reptilemovers.site"
     },
     {
       city: "Hong Kong",
       address: "China Gateway Office",
-      phone: "china@reptilemoverseu.com",
-      email: "china@reptilemoverseu.com"
+      phone: "support@reptilemovers.site",
+      email: "support@reptilemovers.site"
     }
   ];
 
@@ -280,7 +280,7 @@ const ContactPage = () => {
                 <div className="space-y-4">
                   <div className="flex items-center">
                     <Mail className="w-5 h-5 text-emerald-600 mr-3" />
-                    <span className="text-gray-700">info@reptilemoverseu.com</span>
+                    <span className="text-gray-700">support@reptilemovers.site</span>
                   </div>
                   <div className="flex items-center">
                     <Clock className="w-5 h-5 text-emerald-600 mr-3" />
@@ -301,7 +301,7 @@ const ContactPage = () => {
                 </p>
                 <div className="flex items-center">
                   <Phone className="w-5 h-5 text-red-600 mr-3" />
-                  <span className="text-gray-700">emergency@reptilemoverseu.com</span>
+                  <span className="text-gray-700">support@reptilemovers.site</span>
                 </div>
               </div>
 

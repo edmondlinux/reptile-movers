@@ -151,14 +151,14 @@ const ContactForm = () => {
 									<Phone className='w-6 h-6 text-emerald-600 mr-4' />
 									<div>
 										<p className='font-semibold text-gray-900'>Phone</p>
-										<p className='text-gray-600'>support@g-logistics.site</p>
+										<p className='text-gray-600'>support@reptilemovers.site</p>
 									</div>
 								</div>
 								<div className='flex items-center'>
 									<Mail className='w-6 h-6 text-emerald-600 mr-4' />
 									<div>
 										<p className='font-semibold text-gray-900'>Email</p>
-										<p className='text-gray-600'>support@g-logistics.site</p>
+										<p className='text-gray-600'>support@reptilemovers.site</p>
 									</div>
 								</div>
 								<div className='flex items-center'>

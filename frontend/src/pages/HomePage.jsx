@@ -301,11 +301,11 @@ const HomePage = () => {
 							</p>
 							<div className='grid grid-cols-1 md:grid-cols-3 gap-6'>
 								<div className='text-center'>
-									<div className='text-3xl font-bold text-emerald-400 mb-2'>15+</div>
+									<div className='text-3xl font-bold text-emerald-400 mb-2'>5+</div>
 									<div className='text-gray-400'>Years Experience</div>
 								</div>
 								<div className='text-center'>
-									<div className='text-3xl font-bold text-emerald-400 mb-2'>12+</div>
+									<div className='text-3xl font-bold text-emerald-400 mb-2'>9+</div>
 									<div className='text-gray-400'>Asian Countries</div>
 								</div>
 								<div className='text-center'>
@@ -356,7 +356,7 @@ const HomePage = () => {
 							<ArrowRight className='ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform' />
 						</button>
 						<button className='border-2 border-white hover:bg-white hover:text-emerald-600 px-8 py-4 rounded-lg font-semibold text-lg transition duration-300'>
-							email: info@reptilemoverseu.com
+							email: support@reptilemovers.site
 						</button>
 					</div>
 				</div>
