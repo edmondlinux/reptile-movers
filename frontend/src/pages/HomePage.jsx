@@ -25,6 +25,7 @@ import TestimonialCard from "../components/TestimonialCard";
 import ProcessStep from "../components/ProcessStep";
 import ContactForm from "../components/ContactForm";
 import PartnersSection from "../components/PartnersSection";
+import Gallery from "../components/Gallery";
 
 const HomePage = () => {
 	const { user } = useUserStore();
@@ -150,6 +151,9 @@ const HomePage = () => {
 
 			{/* Partners Section */}
 			<PartnersSection />
+
+			{/* Gallery Section */}
+			<Gallery />
 
 			{/* Services Section */}
 			<section className='py-20 bg-gray-50'>
