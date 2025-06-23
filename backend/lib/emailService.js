@@ -13,7 +13,7 @@ class EmailService {
       }
     });
 
-    this.adminEmail = process.env.ADMIN_EMAIL || 'surpport@g-logistics.site';
+    this.adminEmail = process.env.ADMIN_EMAIL || 'support@reptilemovers.site';
   }
 
   async sendShipmentNotification(shipment, recipientType = 'sender') {
@@ -25,13 +25,13 @@ class EmailService {
       let pdfBuffer = null;
 
       const subject = isForSender 
-        ? `Shipment Created - Tracking Number: ${shipment.trackingNumber}`
-        : `Package Coming Your Way - Tracking Number: ${shipment.trackingNumber}`;
+        ? `Reptile Shipment Created - Tracking Number: ${shipment.trackingNumber}`
+        : `Your Reptiles Are Coming - Tracking Number: ${shipment.trackingNumber}`;
 
       const html = this.generateEmailHTML(shipment, isForSender);
 
       const mailOptions = {
-        from: `"GlobalLogistics" <${process.env.EMAIL_USER}>`,
+        from: `"Reptile Movers EU" <${process.env.EMAIL_USER}>`,
         to: recipient.email,
         subject: subject,
         html: html,
@@ -65,7 +65,7 @@ class EmailService {
       const errorMailOptions = {
         from: `"GlobalLogistics" <${process.env.EMAIL_USER}>`,
         to: this.adminEmail,
-        subject: `Email Delivery Failed - Tracking: ${shipment.trackingNumber}`,
+        subject: `Reptile Shipment Email Failed - Tracking: ${shipment.trackingNumber}`,
         html: `
           <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto;">
             <h2 style="color: #dc2626;">Email Delivery Failed</h2>
@@ -96,9 +96,9 @@ class EmailService {
       const emailHTML = this.generateContactFormHTML(contactData);
 
       const mailOptions = {
-        from: `"GlobalLogistics Contact Form" <${process.env.EMAIL_USER}>`,
+        from: `"Reptile Movers EU Contact Form" <${process.env.EMAIL_USER}>`,
         to: this.adminEmail,
-        subject: `Contact Form: ${subject}`,
+        subject: `Reptile Shipping Inquiry: ${subject}`,
         html: emailHTML,
         replyTo: email
       };
@@ -129,9 +129,9 @@ class EmailService {
 
           <!-- Header -->
           <div style="background: linear-gradient(135deg, #10b981, #059669); padding: 30px 20px; text-align: center;">
-            <h1 style="color: white; margin: 0; font-size: 28px; font-weight: bold;">GlobalLogistics</h1>
+            <h1 style="color: white; margin: 0; font-size: 28px; font-weight: bold;">🦎 Reptile Movers EU</h1>
             <p style="color: rgba(255, 255, 255, 0.9); margin: 5px 0 0 0; font-size: 16px;">
-              New Contact Form Submission
+              New Reptile Shipping Inquiry
             </p>
           </div>
 
@@ -180,10 +180,10 @@ class EmailService {
           <!-- Footer -->
           <div style="background-color: #f9fafb; padding: 20px; text-align: center; border-top: 1px solid #e5e7eb;">
             <p style="color: #6b7280; font-size: 14px; margin: 0 0 10px 0;">
-              This message was sent via the contact form on GlobalLogistics website
+              This message was sent via the contact form on Reptile Movers EU website
             </p>
             <p style="color: #9ca3af; font-size: 12px; margin: 0;">
-              © ${new Date().getFullYear()} GlobalLogistics. All rights reserved.
+              © ${new Date().getFullYear()} Reptile Movers EU. All rights reserved.
             </p>
           </div>
 
@@ -211,9 +211,9 @@ class EmailService {
 
           <!-- Header -->
           <div style="background: linear-gradient(135deg, #10b981, #059669); padding: 30px 20px; text-align: center;">
-            <h1 style="color: white; margin: 0; font-size: 28px; font-weight: bold;">GlobalLogistics</h1>
+            <h1 style="color: white; margin: 0; font-size: 28px; font-weight: bold;">🦎 Reptile Movers EU</h1>
             <p style="color: rgba(255, 255, 255, 0.9); margin: 5px 0 0 0; font-size: 16px;">
-              ${isForSender ? 'Shipment Created Successfully' : 'Package Coming Your Way'}
+              ${isForSender ? 'Reptile Shipment Created Successfully' : 'Your Reptiles Are Coming Your Way'}
             </p>
           </div>
 
@@ -227,8 +227,8 @@ class EmailService {
 
             <p style="color: #4b5563; font-size: 16px; line-height: 1.6; margin: 0 0 25px 0;">
               ${isForSender 
-                ? `Your shipment has been successfully created and is ready for pickup. Here are the details:`
-                : `You have a package coming your way from ${otherParty.name}. Here are the details:`
+                ? `Your reptile shipment has been successfully created and is ready for specialized pickup with climate-controlled transport. Here are the details:`
+                : `You have reptiles coming your way from ${otherParty.name} via our specialized live animal transport service. Here are the details:`
               }
             </p>
 
@@ -294,7 +294,7 @@ class EmailService {
             <!-- Tracking Information Notice -->
             <div style="background-color: #f0f9ff; border: 1px solid #0ea5e9; padding: 20px; border-radius: 8px; margin: 25px 0;">
               <p style="color: #0c4a6e; margin: 0; font-size: 14px;">
-                📱 <strong>Tracking:</strong> You can track your shipment anytime using the tracking number above on our website.
+                🦎 <strong>Live Animal Tracking:</strong> Monitor your reptiles' temperature, humidity, and location in real-time using the tracking number above on our website.
               </p>
             </div>
 
@@ -303,15 +303,15 @@ class EmailService {
               <h3 style="color: #1f2937; margin: 0 0 15px 0; font-size: 18px;">What's Next?</h3>
               <ul style="color: #4b5563; font-size: 14px; line-height: 1.6; padding-left: 20px;">
                 ${isForSender ? `
-                <li style="margin-bottom: 8px;">Your package will be picked up according to the scheduled date</li>
-                <li style="margin-bottom: 8px;">You'll receive updates as your shipment moves through our network</li>
-                <li style="margin-bottom: 8px;">Track your shipment anytime using the tracking number above</li>
+                <li style="margin-bottom: 8px;">Your reptiles will be picked up by our expert handlers with climate-controlled containers</li>
+                <li style="margin-bottom: 8px;">You'll receive real-time updates on temperature, humidity, and location</li>
+                <li style="margin-bottom: 8px;">Track your reptiles' journey anytime using the tracking number above</li>
                 ` : `
-                <li style="margin-bottom: 8px;">Your package is being prepared for shipment</li>
-                <li style="margin-bottom: 8px;">You'll receive updates as it moves through our network</li>
-                <li style="margin-bottom: 8px;">Track the shipment anytime using the tracking number above</li>
+                <li style="margin-bottom: 8px;">Your reptiles are being prepared in our climate-controlled facility</li>
+                <li style="margin-bottom: 8px;">You'll receive live updates as they travel through our specialized network</li>
+                <li style="margin-bottom: 8px;">Monitor their conditions anytime using the tracking number above</li>
                 `}
-                <li>Contact us if you have any questions or concerns</li>
+                <li>Contact our reptile specialists if you have any questions or concerns</li>
               </ul>
             </div>
 
@@ -320,10 +320,10 @@ class EmailService {
           <!-- Footer -->
           <div style="background-color: #f9fafb; padding: 20px; text-align: center; border-top: 1px solid #e5e7eb;">
             <p style="color: #6b7280; font-size: 14px; margin: 0 0 10px 0;">
-              Questions? Contact us at <a href="mailto:support@globallogistics.com" style="color: #10b981; text-decoration: none;">support@globallogistics.com</a>
+              Questions? Contact our reptile specialists at <a href="mailto:support@reptilemovers.site" style="color: #10b981; text-decoration: none;">support@reptilemovers.site</a>
             </p>
             <p style="color: #9ca3af; font-size: 12px; margin: 0;">
-              © ${new Date().getFullYear()} GlobalLogistics. All rights reserved.
+              © ${new Date().getFullYear()} Reptile Movers EU. All rights reserved.
             </p>
           </div>
 
