@@ -7,40 +7,44 @@ import {
   Award,
   Users,
   Target,
-  Globe
+  Globe,
+  Heart,
+  Thermometer,
+  FileCheck,
+  Truck
 } from "lucide-react";
 
 const TeamPage = () => {
   const leadership = [
     {
-      name: "Robert Johnson",
-      position: "Chief Executive Officer",
-      bio: "With over 20 years in logistics, Robert leads our global operations with vision and innovation.",
-      email: "r.johnson@globallogistics.com",
-      linkedin: "#",
-      image: "https://images.unsplash.com/photo-1603415526960-f7e0328c63b1?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-    },
-    {
-      name: "Sarah Chen",
-      position: "Chief Operating Officer",
-      bio: "Sarah oversees our day-to-day operations ensuring excellence in service delivery worldwide.",
-      email: "s.chen@globallogistics.com",
+      name: "Dr. Elena Schneider",
+      position: "Chief Executive Officer & Veterinarian",
+      bio: "With 20+ years in veterinary medicine and reptile care, Elena ensures the highest standards in animal welfare.",
+      email: "e.schneider@reptilemoverseu.com",
       linkedin: "#",
       image: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
     },
     {
-      name: "Michael Rodriguez",
-      position: "Chief Technology Officer",
-      bio: "Michael drives our technology initiatives, keeping us at the forefront of logistics innovation.",
-      email: "m.rodriguez@globallogistics.com",
+      name: "Marcus Van Der Berg",
+      position: "Operations Director",
+      bio: "Former wildlife transport specialist with expertise in international reptile shipping regulations and logistics.",
+      email: "m.vandenberg@reptilemoverseu.com",
+      linkedin: "#",
+      image: "https://images.unsplash.com/photo-1603415526960-f7e0328c63b1?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    },
+    {
+      name: "Li Wei Chen",
+      position: "Asian Markets Director",
+      bio: "Based in Singapore, Li Wei manages our Asian operations and maintains relationships with importers across 12 countries.",
+      email: "l.chen@reptilemoverseu.com",
       linkedin: "#",
       image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=1287&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
     },
     {
-      name: "Emily Watson",
-      position: "Chief Financial Officer",
-      bio: "Emily manages our financial strategy and ensures sustainable growth across all markets.",
-      email: "e.watson@globallogistics.com",
+      name: "Sarah Thompson",
+      position: "Compliance & Documentation Officer",
+      bio: "CITES specialist ensuring all shipments meet international wildlife trade regulations and documentation requirements.",
+      email: "s.thompson@reptilemoverseu.com",
       linkedin: "#",
       image: "https://images.unsplash.com/photo-1619895862022-09114b41f16f?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
     }
@@ -48,82 +52,82 @@ const TeamPage = () => {
 
   const departments = [
     {
-      title: "Operations Team",
-      description: "Ensuring smooth execution of logistics operations worldwide",
-      icon: Target,
+      title: "Animal Care Team",
+      description: "Specialized reptile handlers and veterinary technicians ensuring animal welfare",
+      icon: Heart,
       teamMembers: [
         {
-          name: "David Kim",
-          position: "Operations Director",
+          name: "Dr. Andreas Mueller",
+          position: "Lead Veterinarian",
           image: "https://plus.unsplash.com/premium_photo-1689708721750-8a0e6dc14cee?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
         },
         {
-          name: "Lisa Thompson",
-          position: "Regional Manager - Americas",
+          name: "Maria Rodriguez",
+          position: "Senior Reptile Handler",
           image: "https://plus.unsplash.com/premium_photo-1689551670902-19b441a6afde?q=80&w=1287&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
         },
         {
-          name: "Ahmed Hassan",
-          position: "Regional Manager - EMEA",
+          name: "James Wilson",
+          position: "Quarantine Supervisor",
           image: "https://plus.unsplash.com/premium_photo-1689565611422-b2156cc65e47?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
         },
         {
-          name: "Yuki Tanaka",
-          position: "Regional Manager - APAC",
+          name: "Sophie Dubois",
+          position: "Animal Welfare Specialist",
           image: "https://plus.unsplash.com/premium_photo-1689629870780-5d0e655383e6?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
         }
       ]
     },
     {
-      title: "Customer Success",
-      description: "Dedicated to providing exceptional customer service and support",
-      icon: Users,
+      title: "Logistics & Transport",
+      description: "Climate-controlled transport specialists and route coordinators",
+      icon: Truck,
       teamMembers: [
         {
-          name: "Jennifer Martinez",
-          position: "Customer Success Director",
+          name: "Erik Johansson",
+          position: "Transport Manager",
           image: "https://plus.unsplash.com/premium_photo-1689551671548-79ff30459d2a?q=80&w=1287&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
         },
         {
-          name: "Tom Wilson",
-          position: "Account Manager",
+          name: "Ahmed Hassan",
+          position: "Route Coordinator - MENA",
           image: "https://plus.unsplash.com/premium_photo-1690295364571-d2d06159e0a7?q=80&w=1171&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
         },
         {
-          name: "Maria Garcia",
-          position: "Support Specialist",
+          name: "Yuki Tanaka",
+          position: "Air Freight Specialist",
           image: "https://plus.unsplash.com/premium_photo-1689551671541-31a345ce6ae0?q=80&w=1287&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
         },
         {
-          name: "James Brown",
-          position: "Training Coordinator",
+          name: "Francesco Rossi",
+          position: "Vehicle Fleet Manager",
           image: "https://plus.unsplash.com/premium_photo-1689747698547-271d2d553cee?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
         }
       ]
     },
     {
-      title: "Technology Team",
-      description: "Building innovative solutions for modern logistics challenges",
-      icon: Globe,
+      title: "Climate Technology",
+      description: "Environmental monitoring and temperature control systems specialists",
+      icon: Thermometer,
       teamMembers: [
         {
-          name: "Alex Petrov",
-          position: "Lead Developer",
+          name: "Dr. Priya Patel",
+          position: "Climate Systems Engineer",
           image: "https://plus.unsplash.com/premium_photo-1689977927774-401b12d137d6?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
         },
         {
-          name: "Priya Sharma",
-          position: "Data Analyst",
+          name: "Carlos Mendez",
+          position: "Environmental Monitoring Specialist",
           image: "https://plus.unsplash.com/premium_photo-1690294614341-cf346ba0a637?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
         },
         {
-          name: "Carlos Lopez",
-          position: "System Administrator",
+          name: "Anna Kowalski",
+          position: "Quality Control Technician",
           image: "https://plus.unsplash.com/premium_photo-1689530775582-83b8abdb5020?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
         },
         {
-          name: "Rachel Green",
-          position: "UX Designer",
+          name: "David Kim",
+          position: "Systems Maintenance Engineer",
           image: "https://plus.unsplash.com/premium_photo-1690296204289-14e517830d8e?q=80&w=1171&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
         }
       ]
@@ -131,10 +135,10 @@ const TeamPage = () => {
   ];
 
   const stats = [
-    { number: "150+", label: "Team Members", icon: Users },
-    { number: "25+", label: "Countries", icon: Globe },
-    { number: "15+", label: "Years Average Experience", icon: Award },
-    { number: "98%", label: "Employee Satisfaction", icon: Target }
+    { number: "45+", label: "Team Members", icon: Users },
+    { number: "12+", label: "Countries Served", icon: Globe },
+    { number: "8+", label: "Years Average Experience", icon: Award },
+    { number: "100%", label: "Animal Welfare Trained", icon: Heart }
   ];
 
   return (
@@ -150,11 +154,11 @@ const TeamPage = () => {
             className="text-center"
           >
             <h1 className="text-4xl md:text-6xl font-bold mb-6">
-              Meet Our <span className="text-emerald-400">Team</span>
+              Meet Our <span className="text-emerald-400">Reptile Experts</span>
             </h1>
             <p className="text-xl md:text-2xl text-gray-300 max-w-3xl mx-auto">
-              The passionate professionals driving innovation and excellence 
-              in global logistics solutions.
+              Passionate professionals dedicated to safe reptile transportation 
+              and connecting European breeders with Asian markets.
             </p>
           </motion.div>
         </div>
@@ -192,7 +196,7 @@ const TeamPage = () => {
           >
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Leadership Team</h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Experienced leaders guiding our company towards continued success and innovation
+              Expert leaders with deep knowledge in reptile care, logistics, and international trade
             </p>
           </motion.div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
@@ -247,9 +251,9 @@ const TeamPage = () => {
             transition={{ duration: 0.8 }}
             className="text-center mb-16"
           >
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Our Departments</h2>
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Our Specialized Teams</h2>
             <p className="text-xl text-gray-600">
-              Specialized teams working together to deliver exceptional results
+              Expert departments working together to ensure safe reptile transportation
             </p>
           </motion.div>
 
@@ -304,17 +308,17 @@ const TeamPage = () => {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
           >
-            <h2 className="text-3xl md:text-4xl font-bold mb-6">Join Our Team</h2>
+            <h2 className="text-3xl md:text-4xl font-bold mb-6">Join Our Reptile Team</h2>
             <p className="text-xl text-gray-300 mb-8">
-              Ready to be part of a dynamic team that's shaping the future of logistics? 
-              We're always looking for talented individuals to join our growing family.
+              Passionate about reptiles and logistics? Join our specialized team and help us 
+              continue leading the reptile transportation industry across Europe and Asia.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <button className="bg-emerald-600 hover:bg-emerald-700 px-8 py-4 rounded-lg font-semibold text-lg transition duration-300">
-                View Open Positions
+                View Reptile Careers
               </button>
               <button className="border-2 border-white hover:bg-white hover:text-gray-900 px-8 py-4 rounded-lg font-semibold text-lg transition duration-300">
-                Submit Resume
+                Send Your CV
               </button>
             </div>
           </motion.div>

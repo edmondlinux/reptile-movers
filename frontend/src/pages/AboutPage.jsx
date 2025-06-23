@@ -10,60 +10,64 @@ import {
   Target,
   Truck,
   Package,
-  MapPin
+  MapPin,
+  Heart,
+  Thermometer,
+  FileCheck,
+  Plane
 } from "lucide-react";
 
 const AboutPage = () => {
   const stats = [
-    { number: "25+", label: "Years Experience", icon: Clock },
-    { number: "200+", label: "Countries Served", icon: Globe },
-    { number: "50K+", label: "Happy Clients", icon: Users },
-    { number: "99.9%", label: "Delivery Success", icon: Target }
+    { number: "15+", label: "Years Experience", icon: Clock },
+    { number: "12+", label: "Asian Countries", icon: Globe },
+    { number: "5K+", label: "Happy Breeders", icon: Users },
+    { number: "99.9%", label: "Safe Arrivals", icon: Target }
   ];
 
   const values = [
     {
-      title: "Reliability",
-      description: "We deliver on our promises with consistent, dependable service that you can count on.",
-      icon: Shield
+      title: "Animal Welfare",
+      description: "Our top priority is the health and safety of every reptile during transportation.",
+      icon: Heart
     },
     {
-      title: "Innovation",
-      description: "Continuously evolving our technology and processes to provide cutting-edge logistics solutions.",
+      title: "Expertise",
+      description: "Specialized knowledge in reptile biology, behavior, and transportation requirements.",
       icon: Award
     },
     {
-      title: "Excellence",
-      description: "Committed to exceeding expectations in every aspect of our service delivery.",
-      icon: Target
+      title: "Compliance",
+      description: "Full CITES documentation and legal compliance for international reptile trade.",
+      icon: FileCheck
     },
     {
-      title: "Global Reach",
-      description: "Connecting businesses worldwide with our extensive network and local expertise.",
-      icon: Globe
+      title: "Innovation",
+      description: "Advanced climate control and monitoring systems for optimal reptile comfort.",
+      icon: Thermometer
     }
   ];
 
   const milestones = [
     {
-      year: "1998",
+      year: "2008",
       title: "Company Founded",
-      description: "Started with a vision to revolutionize logistics"
+      description: "Started as Europe's first specialized reptile courier service"
     },
     {
-      year: "2005",
-      title: "International Expansion",
-      description: "Extended services to 50+ countries"
+      year: "2012",
+      title: "Asian Expansion",
+      description: "Established shipping routes to China, Malaysia, and Korea"
     },
     {
-      year: "2015",
-      title: "Technology Integration",
-      description: "Launched real-time tracking platform"
+      year: "2018",
+      title: "Climate Technology",
+      description: "Launched advanced temperature and humidity monitoring systems"
     },
     {
       year: "2023",
-      title: "Sustainability Initiative",
-      description: "Committed to carbon-neutral delivery"
+      title: "Global Network",
+      description: "Extended to 12+ Asian countries with certified facilities"
     }
   ];
 
@@ -80,11 +84,11 @@ const AboutPage = () => {
             className="text-center"
           >
             <h1 className="text-4xl md:text-6xl font-bold mb-6">
-              About <span className="text-emerald-400">GlobalLogistics</span>
+              About <span className="text-emerald-400">Reptile Movers EU</span>
             </h1>
             <p className="text-xl md:text-2xl text-gray-300 max-w-3xl mx-auto">
-              Leading the future of logistics with innovative solutions, 
-              reliable service, and a commitment to excellence.
+              Europe's leading reptile transportation specialists, connecting 
+              breeders with Asian markets through safe, legal shipping solutions.
             </p>
           </motion.div>
         </div>
@@ -122,18 +126,19 @@ const AboutPage = () => {
             >
               <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">Our Story</h2>
               <p className="text-lg text-gray-700 mb-6 leading-relaxed">
-                Founded in 1998, GlobalLogistics began as a small freight forwarding company 
-                with a big vision: to make global shipping simple, reliable, and accessible 
-                for businesses of all sizes.
+                Founded in 2008 by reptile enthusiasts and logistics professionals, 
+                Reptile Movers EU emerged from a simple need: safe, reliable transportation 
+                for precious reptiles between European breeders and Asian markets.
               </p>
               <p className="text-lg text-gray-700 mb-6 leading-relaxed">
-                Over the past 25 years, we've grown from a local operation to a global 
-                network spanning over 200 countries. Our success is built on the trust 
-                of our clients and the dedication of our team.
+                Over 15 years, we've perfected our climate-controlled transportation 
+                methods, built relationships with CITES authorities, and established 
+                trusted networks across Europe and Asia.
               </p>
               <p className="text-lg text-gray-700 leading-relaxed">
-                Today, we're proud to be recognized as an industry leader, continuing 
-                to innovate and set new standards in logistics excellence.
+                Today, we're proud to be the leading reptile courier service, 
+                with thousands of successful shipments and healthy arrivals 
+                across 12+ Asian countries.
               </p>
             </motion.div>
             <motion.div
@@ -143,13 +148,13 @@ const AboutPage = () => {
               className="grid grid-cols-2 gap-4"
             >
               <div className="bg-gray-200 rounded-lg h-48 flex items-center justify-center">
-                <Package className="w-16 h-16 text-gray-500" />
+                <Thermometer className="w-16 h-16 text-gray-500" />
               </div>
               <div className="bg-gray-200 rounded-lg h-48 flex items-center justify-center">
                 <Truck className="w-16 h-16 text-gray-500" />
               </div>
               <div className="bg-gray-200 rounded-lg h-48 flex items-center justify-center col-span-2">
-                <MapPin className="w-16 h-16 text-gray-500" />
+                <Plane className="w-16 h-16 text-gray-500" />
               </div>
             </motion.div>
           </div>
@@ -167,7 +172,7 @@ const AboutPage = () => {
           >
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Our Values</h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              The principles that guide everything we do
+              The principles that guide our reptile transportation services
             </p>
           </motion.div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
@@ -199,7 +204,7 @@ const AboutPage = () => {
           >
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Our Journey</h2>
             <p className="text-xl text-gray-600">
-              Key milestones in our growth story
+              Key milestones in building Europe's premier reptile shipping service
             </p>
           </motion.div>
           <div className="relative">
@@ -237,31 +242,31 @@ const AboutPage = () => {
             transition={{ duration: 0.8 }}
             className="text-center mb-16"
           >
-            <h2 className="text-3xl md:text-4xl font-bold mb-4">Certifications & Awards</h2>
+            <h2 className="text-3xl md:text-4xl font-bold mb-4">Certifications & Expertise</h2>
             <p className="text-xl text-gray-300">
-              Recognized for excellence in the logistics industry
+              Recognized for excellence in reptile transportation and animal welfare
             </p>
           </motion.div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             <div className="bg-gray-800 rounded-lg p-6 text-center">
-              <Award className="w-12 h-12 text-emerald-400 mx-auto mb-4" />
-              <h3 className="font-semibold mb-2">ISO 9001:2015</h3>
-              <p className="text-gray-400 text-sm">Quality Management Systems</p>
+              <FileCheck className="w-12 h-12 text-emerald-400 mx-auto mb-4" />
+              <h3 className="font-semibold mb-2">CITES Certified</h3>
+              <p className="text-gray-400 text-sm">Wildlife Trade Documentation</p>
             </div>
             <div className="bg-gray-800 rounded-lg p-6 text-center">
               <Shield className="w-12 h-12 text-emerald-400 mx-auto mb-4" />
-              <h3 className="font-semibold mb-2">C-TPAT Certified</h3>
-              <p className="text-gray-400 text-sm">Customs-Trade Partnership</p>
+              <h3 className="font-semibold mb-2">IATA Certified</h3>
+              <p className="text-gray-400 text-sm">Live Animal Regulations</p>
             </div>
             <div className="bg-gray-800 rounded-lg p-6 text-center">
               <Globe className="w-12 h-12 text-emerald-400 mx-auto mb-4" />
-              <h3 className="font-semibold mb-2">IATA Certified</h3>
-              <p className="text-gray-400 text-sm">Air Transport Association</p>
+              <h3 className="font-semibold mb-2">EU Approved</h3>
+              <p className="text-gray-400 text-sm">Animal Transport Certificate</p>
             </div>
             <div className="bg-gray-800 rounded-lg p-6 text-center">
-              <DollarSign className="w-12 h-12 text-emerald-400 mx-auto mb-4" />
-              <h3 className="font-semibold mb-2">Best Logistics Provider</h3>
-              <p className="text-gray-400 text-sm">Industry Excellence Award 2023</p>
+              <Award className="w-12 h-12 text-emerald-400 mx-auto mb-4" />
+              <h3 className="font-semibold mb-2">Best Reptile Courier</h3>
+              <p className="text-gray-400 text-sm">European Reptile Association 2023</p>
             </div>
           </div>
         </div>
