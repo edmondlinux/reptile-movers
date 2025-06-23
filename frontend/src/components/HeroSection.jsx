@@ -4,10 +4,10 @@ import { useShipmentStore } from "../stores/useShipmentStore";
 
 // Reptile and nature themed background images
 const backgroundImages = [
-	"https://images.pexels.com/photos/45853/grey-crowned-crane-bird-crane-animal-45853.jpeg",
-	"https://images.pexels.com/photos/1059823/pexels-photo-1059823.jpeg",
-	"https://images.pexels.com/photos/34426/snake-rainbow-boa-reptile-scale.jpg",
-	"https://images.pexels.com/photos/1059823/pexels-photo-1059823.jpeg",
+	"https://img.joomcdn.net/36156a9978ca2e5baf7e9de46a6ba9388c0e918d_original.jpeg",
+	"https://cdn.mos.cms.futurecdn.net/LeLcqJPp6DtqwFddXH5X6A-1024-80.jpg.webp",
+	"https://www.anywhere.com/img-a/flora-fauna/reptile/iguana-verde/green-iguana2.jpg?q=95&w=650",
+	"https://live.staticflickr.com/916/28319597677_c9acaf5d4e_b.jpg",
 ];
 
 const HeroSection = () => {
