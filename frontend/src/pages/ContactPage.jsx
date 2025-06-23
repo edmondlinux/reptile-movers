@@ -162,7 +162,7 @@ const ContactPage = () => {
                     onChange={handleInputChange}
                     placeholder="Full Name *"
                     required
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-emerald-500"
+                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-emerald-500 text-gray-900"
                   />
                   <input
                     type="email"
@@ -171,7 +171,7 @@ const ContactPage = () => {
                     onChange={handleInputChange}
                     placeholder="Email Address *"
                     required
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-emerald-500"
+                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-emerald-500 text-gray-900"
                   />
                 </div>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -181,7 +181,7 @@ const ContactPage = () => {
                     value={formData.phone}
                     onChange={handleInputChange}
                     placeholder="Phone Number"
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-emerald-500"
+                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-emerald-500 text-gray-900"
                   />
                   <input
                     type="text"
@@ -189,7 +189,7 @@ const ContactPage = () => {
                     value={formData.company}
                     onChange={handleInputChange}
                     placeholder="Breeding Company/Farm"
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-emerald-500"
+                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-emerald-500 text-gray-900"
                   />
                 </div>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -197,7 +197,7 @@ const ContactPage = () => {
                     name="serviceType"
                     value={formData.serviceType}
                     onChange={handleInputChange}
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-emerald-500"
+                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-emerald-500 text-gray-900"
                   >
                     {serviceTypes.map(type => (
                       <option key={type.value} value={type.value}>{type.label}</option>
@@ -210,7 +210,7 @@ const ContactPage = () => {
                     onChange={handleInputChange}
                     placeholder="Subject *"
                     required
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-emerald-500"
+                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-emerald-500 text-gray-900"
                   />
                 </div>
                 <textarea
@@ -220,7 +220,7 @@ const ContactPage = () => {
                   placeholder="Tell us about your reptiles, destination, and shipping requirements *"
                   required
                   rows="6"
-                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-emerald-500"
+                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-emerald-500 text-gray-900"
                 />
                 
                 {/* Status Messages */}
