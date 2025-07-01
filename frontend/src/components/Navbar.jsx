@@ -50,7 +50,7 @@ const Navbar = () => {
 							<div className='flex items-center space-x-4'>
 								{user.role === 'admin' && (
 									<Link
-										to='/admin'
+										to='/admin-dashboard'
 										className='bg-emerald-600 hover:bg-emerald-700 text-white px-4 py-2 rounded-md font-medium transition duration-300 ease-in-out flex items-center'
 									>
 										<Lock className='mr-2 h-4 w-4' />
