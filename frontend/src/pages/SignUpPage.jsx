@@ -1,8 +1,10 @@
+
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import { UserPlus, Mail, Lock, User, ArrowRight, Loader } from "lucide-react";
 import { motion } from "framer-motion";
 import { useUserStore } from "../stores/useUserStore";
+import { useTranslation } from "../hooks/useTranslation";
 
 const SignUpPage = () => {
 	const [formData, setFormData] = useState({
@@ -11,6 +13,7 @@ const SignUpPage = () => {
 		password: "",
 		confirmPassword: "",
 	});
+	const { t } = useTranslation();
 
 	const { signup, loading } = useUserStore();
 
@@ -27,7 +30,9 @@ const SignUpPage = () => {
 				animate={{ opacity: 1, y: 0 }}
 				transition={{ duration: 0.8 }}
 			>
-				<h2 className='mt-6 text-center text-3xl font-extrabold text-emerald-400'>Create your account</h2>
+				<h2 className='mt-6 text-center text-3xl font-extrabold text-emerald-400'>
+					{t('auth.signup.title')}
+				</h2>
 			</motion.div>
 
 			<motion.div
@@ -40,7 +45,7 @@ const SignUpPage = () => {
 					<form onSubmit={handleSubmit} className='space-y-6'>
 						<div>
 							<label htmlFor='name' className='block text-sm font-medium text-gray-300'>
-								Full name
+								{t('auth.signup.nameLabel')}
 							</label>
 							<div className='mt-1 relative rounded-md shadow-sm'>
 								<div className='absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none'>
@@ -54,14 +59,14 @@ const SignUpPage = () => {
 									onChange={(e) => setFormData({ ...formData, name: e.target.value })}
 									className='block w-full px-3 py-2 pl-10 bg-gray-700 border border-gray-600 rounded-md shadow-sm
 									 placeholder-gray-400 focus:outline-none focus:ring-emerald-500 focus:border-emerald-500 sm:text-sm'
-									placeholder='John Doe'
+									placeholder={t('auth.signup.namePlaceholder')}
 								/>
 							</div>
 						</div>
 
 						<div>
 							<label htmlFor='email' className='block text-sm font-medium text-gray-300'>
-								Email address
+								{t('auth.signup.emailLabel')}
 							</label>
 							<div className='mt-1 relative rounded-md shadow-sm'>
 								<div className='absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none'>
@@ -77,14 +82,14 @@ const SignUpPage = () => {
 									rounded-md shadow-sm
 									 placeholder-gray-400 focus:outline-none focus:ring-emerald-500 
 									 focus:border-emerald-500 sm:text-sm'
-									placeholder='you@example.com'
+									placeholder={t('auth.signup.emailPlaceholder')}
 								/>
 							</div>
 						</div>
 
 						<div>
 							<label htmlFor='password' className='block text-sm font-medium text-gray-300'>
-								Password
+								{t('auth.signup.passwordLabel')}
 							</label>
 							<div className='mt-1 relative rounded-md shadow-sm'>
 								<div className='absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none'>
@@ -98,14 +103,14 @@ const SignUpPage = () => {
 									onChange={(e) => setFormData({ ...formData, password: e.target.value })}
 									className=' block w-full px-3 py-2 pl-10 bg-gray-700 border border-gray-600 
 									rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring-emerald-500 focus:border-emerald-500 sm:text-sm'
-									placeholder='••••••••'
+									placeholder={t('auth.signup.passwordPlaceholder')}
 								/>
 							</div>
 						</div>
 
 						<div>
 							<label htmlFor='confirmPassword' className='block text-sm font-medium text-gray-300'>
-								Confirm Password
+								{t('auth.signup.confirmPasswordLabel')}
 							</label>
 							<div className='mt-1 relative rounded-md shadow-sm'>
 								<div className='absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none'>
@@ -119,7 +124,7 @@ const SignUpPage = () => {
 									onChange={(e) => setFormData({ ...formData, confirmPassword: e.target.value })}
 									className=' block w-full px-3 py-2 pl-10 bg-gray-700 border
 									 border-gray-600 rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring-emerald-500 focus:border-emerald-500 sm:text-sm'
-									placeholder='••••••••'
+									placeholder={t('auth.signup.confirmPasswordPlaceholder')}
 								/>
 							</div>
 						</div>
@@ -135,21 +140,21 @@ const SignUpPage = () => {
 							{loading ? (
 								<>
 									<Loader className='mr-2 h-5 w-5 animate-spin' aria-hidden='true' />
-									Loading...
+									{t('common.loading')}
 								</>
 							) : (
 								<>
 									<UserPlus className='mr-2 h-5 w-5' aria-hidden='true' />
-									Sign up
+									{t('auth.signup.signUpButton')}
 								</>
 							)}
 						</button>
 					</form>
 
 					<p className='mt-8 text-center text-sm text-gray-400'>
-						Already have an account?{" "}
+						{t('auth.signup.alreadyMember')}{" "}
 						<Link to='/login' className='font-medium text-emerald-400 hover:text-emerald-300'>
-							Login here <ArrowRight className='inline h-4 w-4' />
+							{t('auth.signup.loginHere')} <ArrowRight className='inline h-4 w-4' />
 						</Link>
 					</p>
 				</div>

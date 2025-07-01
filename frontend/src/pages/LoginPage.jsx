@@ -1,12 +1,15 @@
+
 import { useState } from "react";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import { LogIn, Mail, Lock, ArrowRight, Loader } from "lucide-react";
 import { useUserStore } from "../stores/useUserStore";
+import { useTranslation } from "../hooks/useTranslation";
 
 const LoginPage = () => {
 	const [email, setEmail] = useState("");
 	const [password, setPassword] = useState("");
+	const { t } = useTranslation();
 
 	const { login, loading } = useUserStore();
 
@@ -24,7 +27,9 @@ const LoginPage = () => {
 				animate={{ opacity: 1, y: 0 }}
 				transition={{ duration: 0.8 }}
 			>
-				<h2 className='mt-6 text-center text-3xl font-extrabold text-emerald-400'>Sign in to your account</h2>
+				<h2 className='mt-6 text-center text-3xl font-extrabold text-emerald-400'>
+					{t('auth.login.title')}
+				</h2>
 			</motion.div>
 
 			<motion.div
@@ -37,7 +42,7 @@ const LoginPage = () => {
 					<form onSubmit={handleSubmit} className='space-y-6'>
 						<div>
 							<label htmlFor='email' className='block text-sm font-medium text-gray-300'>
-								Email address
+								{t('auth.login.emailLabel')}
 							</label>
 							<div className='mt-1 relative rounded-md shadow-sm'>
 								<div className='absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none'>
@@ -53,14 +58,14 @@ const LoginPage = () => {
 									rounded-md shadow-sm
 									 placeholder-gray-400 focus:outline-none focus:ring-emerald-500 
 									 focus:border-emerald-500 sm:text-sm'
-									placeholder='you@example.com'
+									placeholder={t('auth.login.emailPlaceholder')}
 								/>
 							</div>
 						</div>
 
 						<div>
 							<label htmlFor='password' className='block text-sm font-medium text-gray-300'>
-								Password
+								{t('auth.login.passwordLabel')}
 							</label>
 							<div className='mt-1 relative rounded-md shadow-sm'>
 								<div className='absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none'>
@@ -74,7 +79,7 @@ const LoginPage = () => {
 									onChange={(e) => setPassword(e.target.value)}
 									className=' block w-full px-3 py-2 pl-10 bg-gray-700 border border-gray-600 
 									rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring-emerald-500 focus:border-emerald-500 sm:text-sm'
-									placeholder='••••••••'
+									placeholder={t('auth.login.passwordPlaceholder')}
 								/>
 							</div>
 						</div>
@@ -90,21 +95,21 @@ const LoginPage = () => {
 							{loading ? (
 								<>
 									<Loader className='mr-2 h-5 w-5 animate-spin' aria-hidden='true' />
-									Loading...
+									{t('common.loading')}
 								</>
 							) : (
 								<>
 									<LogIn className='mr-2 h-5 w-5' aria-hidden='true' />
-									Login
+									{t('auth.login.loginButton')}
 								</>
 							)}
 						</button>
 					</form>
 
 					<p className='mt-8 text-center text-sm text-gray-400'>
-						Not a member?{" "}
+						{t('auth.login.notMember')}{" "}
 						<Link to='/signup' className='font-medium text-emerald-400 hover:text-emerald-300'>
-							Sign up now <ArrowRight className='inline h-4 w-4' />
+							{t('auth.login.signUpNow')} <ArrowRight className='inline h-4 w-4' />
 						</Link>
 					</p>
 				</div>

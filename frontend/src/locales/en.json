@@ -31,6 +31,32 @@
     "submit": "Submit",
     "close": "Close"
   },
+  "auth": {
+    "login": {
+      "title": "Sign in to your account",
+      "emailLabel": "Email address",
+      "emailPlaceholder": "you@example.com",
+      "passwordLabel": "Password",
+      "passwordPlaceholder": "••••••••",
+      "loginButton": "Login",
+      "notMember": "Not a member?",
+      "signUpNow": "Sign up now"
+    },
+    "signup": {
+      "title": "Create your account",
+      "nameLabel": "Full name",
+      "namePlaceholder": "John Doe",
+      "emailLabel": "Email address",
+      "emailPlaceholder": "you@example.com",
+      "passwordLabel": "Password",
+      "passwordPlaceholder": "••••••••",
+      "confirmPasswordLabel": "Confirm Password",
+      "confirmPasswordPlaceholder": "••••••••",
+      "signUpButton": "Sign up",
+      "alreadyMember": "Already have an account?",
+      "loginHere": "Login here"
+    }
+  },
   "hero": {
     "title": "Reptile Movers",
     "subtitle": "EU",

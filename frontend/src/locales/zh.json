@@ -31,6 +31,32 @@
     "submit": "提交",
     "close": "关闭"
   },
+  "auth": {
+    "login": {
+      "title": "登录您的账户",
+      "emailLabel": "邮箱地址",
+      "emailPlaceholder": "您的邮箱@example.com",
+      "passwordLabel": "密码",
+      "passwordPlaceholder": "••••••••",
+      "loginButton": "登录",
+      "notMember": "还不是会员？",
+      "signUpNow": "立即注册"
+    },
+    "signup": {
+      "title": "创建您的账户",
+      "nameLabel": "全名",
+      "namePlaceholder": "张三",
+      "emailLabel": "邮箱地址",
+      "emailPlaceholder": "您的邮箱@example.com",
+      "passwordLabel": "密码",
+      "passwordPlaceholder": "••••••••",
+      "confirmPasswordLabel": "确认密码",
+      "confirmPasswordPlaceholder": "••••••••",
+      "signUpButton": "注册",
+      "alreadyMember": "已有账户？",
+      "loginHere": "点此登录"
+    }
+  },
   "hero": {
     "title": "爬虫运输",
     "subtitle": "欧盟",

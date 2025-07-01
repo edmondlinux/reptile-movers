@@ -31,6 +31,32 @@
     "submit": "Hantar",
     "close": "Tutup"
   },
+  "auth": {
+    "login": {
+      "title": "Log masuk ke akaun anda",
+      "emailLabel": "Alamat emel",
+      "emailPlaceholder": "anda@example.com",
+      "passwordLabel": "Kata laluan",
+      "passwordPlaceholder": "••••••••",
+      "loginButton": "Log Masuk",
+      "notMember": "Bukan ahli?",
+      "signUpNow": "Daftar sekarang"
+    },
+    "signup": {
+      "title": "Cipta akaun anda",
+      "nameLabel": "Nama penuh",
+      "namePlaceholder": "Ahmad Ali",
+      "emailLabel": "Alamat emel",
+      "emailPlaceholder": "anda@example.com",
+      "passwordLabel": "Kata laluan",
+      "passwordPlaceholder": "••••••••",
+      "confirmPasswordLabel": "Sahkan Kata Laluan",
+      "confirmPasswordPlaceholder": "••••••••",
+      "signUpButton": "Daftar",
+      "alreadyMember": "Sudah mempunyai akaun?",
+      "loginHere": "Log masuk di sini"
+    }
+  },
   "hero": {
     "title": "Pengangkut Reptilia",
     "subtitle": "EU",
