@@ -2,8 +2,10 @@
 import { useState } from "react";
 import { Mail, Phone, MapPin, Send, CheckCircle, AlertCircle } from "lucide-react";
 import axios from "../lib/axios";
+import { useTranslation } from "../hooks/useTranslation";
 
 const ContactForm = () => {
+	const { t } = useTranslation();
 	const [formData, setFormData] = useState({
 		name: '',
 		email: '',
@@ -53,8 +55,8 @@ const ContactForm = () => {
 		<div className='bg-gray-50 py-16'>
 			<div className='max-w-7xl mx-auto px-4 sm:px-6 lg:px-8'>
 				<div className='text-center mb-12'>
-					<h2 className='text-3xl md:text-4xl font-bold text-gray-900 mb-4'>Get In Touch</h2>
-					<p className='text-xl text-gray-600'>Ready to ship? Contact us for a personalized quote</p>
+					<h2 className='text-3xl md:text-4xl font-bold text-gray-900 mb-4'>{t('contactForm.title')}</h2>
+					<p className='text-xl text-gray-600'>{t('contactForm.description')}</p>
 				</div>
 
 				<div className='grid grid-cols-1 lg:grid-cols-2 gap-12'>
@@ -63,7 +65,7 @@ const ContactForm = () => {
 						<form onSubmit={handleSubmit}>
 							<div className='grid grid-cols-1 md:grid-cols-2 gap-6 mb-6'>
 								<div>
-									<label className='block text-gray-700 font-semibold mb-2'>Name</label>
+									<label className='block text-gray-700 font-semibold mb-2'>{t('contactForm.name')}</label>
 									<input
 										type="text"
 										name="name"
@@ -74,7 +76,7 @@ const ContactForm = () => {
 									/>
 								</div>
 								<div>
-									<label className='block text-gray-700 font-semibold mb-2'>Email</label>
+									<label className='block text-gray-700 font-semibold mb-2'>{t('contactForm.email')}</label>
 									<input
 										type="email"
 										name="email"
@@ -86,7 +88,7 @@ const ContactForm = () => {
 								</div>
 							</div>
 							<div className='mb-6'>
-								<label className='block text-gray-700 font-semibold mb-2'>Subject</label>
+								<label className='block text-gray-700 font-semibold mb-2'>{t('contactForm.subject')}</label>
 								<input
 									type="text"
 									name="subject"
@@ -97,7 +99,7 @@ const ContactForm = () => {
 								/>
 							</div>
 							<div className='mb-6'>
-								<label className='block text-gray-700 font-semibold mb-2'>Message</label>
+								<label className='block text-gray-700 font-semibold mb-2'>{t('contactForm.message')}</label>
 								<textarea
 									name="message"
 									value={formData.message}
@@ -111,14 +113,14 @@ const ContactForm = () => {
 							{status === 'success' && (
 								<div className='mb-4 p-4 bg-green-100 border border-green-400 text-green-700 rounded-lg flex items-center'>
 									<CheckCircle className='w-5 h-5 mr-2' />
-									Message sent successfully! We'll get back to you soon.
+									{t('contactForm.success')}
 								</div>
 							)}
 
 							{status === 'error' && (
 								<div className='mb-4 p-4 bg-red-100 border border-red-400 text-red-700 rounded-lg flex items-center'>
 									<AlertCircle className='w-5 h-5 mr-2' />
-									Failed to send message. Please try again.
+									{t('contactForm.error')}
 								</div>
 							)}
 
@@ -130,12 +132,12 @@ const ContactForm = () => {
 								{loading ? (
 									<>
 										<div className="animate-spin rounded-full h-4 w-4 border-b-2 border-white mr-2"></div>
-										Sending...
+										{t('contactForm.sending')}
 									</>
 								) : (
 									<>
 										<Send className='w-4 h-4 mr-2' />
-										Send Message
+										{t('contactForm.send')}
 									</>
 								)}
 							</button>
@@ -145,26 +147,26 @@ const ContactForm = () => {
 					{/* Contact Info & Map */}
 					<div>
 						<div className='bg-white rounded-xl p-8 shadow-lg mb-6'>
-							<h3 className='text-2xl font-bold text-gray-900 mb-6'>Contact Information</h3>
+							<h3 className='text-2xl font-bold text-gray-900 mb-6'>{t('contactForm.contactInfo')}</h3>
 							<div className='space-y-4'>
 								<div className='flex items-center'>
 									<Phone className='w-6 h-6 text-emerald-600 mr-4' />
 									<div>
-										<p className='font-semibold text-gray-900'>Phone</p>
+										<p className='font-semibold text-gray-900'>{t('contactForm.phone')}</p>
 										<p className='text-gray-600'>support@reptilemovers.site</p>
 									</div>
 								</div>
 								<div className='flex items-center'>
 									<Mail className='w-6 h-6 text-emerald-600 mr-4' />
 									<div>
-										<p className='font-semibold text-gray-900'>Email</p>
+										<p className='font-semibold text-gray-900'>{t('contactForm.email')}</p>
 										<p className='text-gray-600'>support@reptilemovers.site</p>
 									</div>
 								</div>
 								<div className='flex items-center'>
 									<MapPin className='w-6 h-6 text-emerald-600 mr-4' />
 									<div>
-										<p className='font-semibold text-gray-900'>Address</p>
+										<p className='font-semibold text-gray-900'>{t('contactForm.address')}</p>
 										<p className='text-gray-600'>REPTILE MOVERS EU</p>
 									</div>
 								</div>
@@ -175,7 +177,7 @@ const ContactForm = () => {
 						<div className='bg-gray-300 rounded-xl h-64 flex items-center justify-center'>
 							<div className='text-center'>
 								<MapPin className='w-12 h-12 text-gray-500 mx-auto mb-2' />
-								<p className='text-gray-600'>Google Map</p>
+								<p className='text-gray-600'>{t('contactForm.googleMap')}</p>
 							</div>
 						</div>
 					</div>

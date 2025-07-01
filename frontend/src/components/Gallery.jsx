@@ -1,8 +1,10 @@
 
 import React, { useState } from 'react';
 import { ChevronLeft, ChevronRight, X, ZoomIn } from 'lucide-react';
+import { useTranslation } from '../hooks/useTranslation';
 
 const Gallery = () => {
+	const { t } = useTranslation();
 	const [selectedImage, setSelectedImage] = useState(null);
 	const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
@@ -11,64 +13,64 @@ const Gallery = () => {
 			id: 1,
 			url: "https://cdn.reptile.guide/wp-content/uploads/2019/01/Bearded-Dragon-Buckled-Up-In-Car.jpg",
 			title: "Bearded Dragon Transport",
-			category: "Reptiles",
-			description: "Professional bearded dragon transportation with climate control"
+			category: t('gallery.categories.reptiles'),
+			description: t('gallery.images.beardedTransport')
 		},
 		{
 			id: 2,
 			url: "https://shipyourreptiles.com/products/213/213_2023_05_24_04_22_10.png",
 			title: "Insulated Box",
-			category: "Reptiles",
-			description: "Well insulated box for safe reptile transportation"
+			category: t('gallery.categories.reptiles'),
+			description: t('gallery.images.insulatedBox')
 		},
 		{
 			id: 3,
 			url: "https://cdn.machineseeker.com/data/listing/img/vga/ms/30/41/16095703-01.jpg?v=1714742205",
 			title: "Climate-Controlled Containers",
-			category: "Equipment",
-			description: "State-of-the-art shipping containers with temperature monitoring"
+			category: t('gallery.categories.equipment'),
+			description: t('gallery.images.climateContainers')
 		},
 		{
 			id: 4,
 			url: "https://64.media.tumblr.com/3eac0b6bef44e51769fabcc610dcd1e5/tumblr_inline_pflhkk6jbS1qml5jd_1280.jpg",
 			title: "Transport Setup",
-			category: "Reptiles",
-			description: "Specialized boxes for large snake transportation"
+			category: t('gallery.categories.reptiles'),
+			description: t('gallery.images.transportSetup')
 		},
 		{
 			id: 5,
 			url: "https://preview.redd.it/bough-a-small-coral-is-it-safe-to-travel-with-it-more-in-v0-kfknhcesn3cb1.png?auto=webp&s=348d38ea7757ef3b1d2e7ba39d233a51d7e8863b",
 			title: "Shipping Documentation",
-			category: "Process",
-			description: "Complete CITES documentation and health certificates"
+			category: t('gallery.categories.process'),
+			description: t('gallery.images.documentation')
 		},
 		{
 			id: 6,
 			url: "https://eu-exoticreptiles.com/wp-content/uploads/2024/10/b36381_90fb4389f3144a95b7dd4fff8352063fmv2.jpg",
 			title: "Secure Packaging",
-			category: "Equipment",
-			description: "Professional packaging ensuring animal safety during transport"
+			category: t('gallery.categories.equipment'),
+			description: t('gallery.images.packaging')
 		},
 		{
 			id: 7,
 			url: "https://exoticpetdecor.com/cdn/shop/collections/other-lizards.jpg?v=1708661289",
 			title: "Lizard Species Collection",
-			category: "Reptiles",
-			description: "Various lizard species prepared for international shipping"
+			category: t('gallery.categories.reptiles'),
+			description: t('gallery.images.lizardCollection')
 		},
 		{
 			id: 8,
 			url: "https://ik.imagekit.io/14iir4o77/IMG_0402.jpeg",
 			title: "Transport Monitoring",
-			category: "Process",
-			description: "Real-time monitoring and tracking throughout the journey"
+			category: t('gallery.categories.process'),
+			description: t('gallery.images.monitoring')
 		}
 	];
 
-	const categories = ["All", ...new Set(galleryImages.map(img => img.category))];
-	const [activeCategory, setActiveCategory] = useState("All");
+	const categories = [t('gallery.categories.all'), ...new Set(galleryImages.map(img => img.category))];
+	const [activeCategory, setActiveCategory] = useState(t('gallery.categories.all'));
 
-	const filteredImages = activeCategory === "All" 
+	const filteredImages = activeCategory === t('gallery.categories.all')
 		? galleryImages 
 		: galleryImages.filter(img => img.category === activeCategory);
 
@@ -95,11 +97,10 @@ const Gallery = () => {
 			<div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 				<div className="text-center mb-16">
 					<h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-						Our Work in Action
+						{t('gallery.title')}
 					</h2>
 					<p className="text-xl text-gray-600 max-w-3xl mx-auto">
-						Explore our gallery showcasing reptile transportation, specialized equipment, 
-						and successful deliveries across Europe and Asia
+						{t('gallery.description')}
 					</p>
 				</div>
 

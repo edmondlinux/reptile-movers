@@ -163,5 +163,97 @@
     "description": "Berhubung dengan pasaran Asia melalui pakar pengangkutan reptilia terkemuka Eropah.",
     "getQuote": "Dapatkan Sebut Harga Penghantaran",
     "email": "emel: support@reptilemovers.site"
+  },
+  "contact": {
+    "hero": {
+      "title": "Hubungi Kami",
+      "subtitle": "Pengangkut Reptilia EU",
+      "description": "Berhubung dengan pakar pengangkutan reptilia kami. Kami di sini untuk membantu menghantar reptilia anda dengan selamat ke pasaran Asia."
+    },
+    "form": {
+      "title": "Dapatkan Sebut Harga Penghantaran Reptilia",
+      "name": "Nama Penuh",
+      "email": "Alamat Emel",
+      "phone": "Nombor Telefon",
+      "company": "Syarikat/Ladang Pembiakbaka",
+      "subject": "Subjek",
+      "message": "Beritahu kami tentang reptilia, destinasi, dan keperluan penghantaran anda",
+      "serviceType": "Jenis Perkhidmatan",
+      "submit": "Dapatkan Sebut Harga Penghantaran Reptilia",
+      "sending": "Menghantar...",
+      "success": "Mesej berjaya dihantar! Pakar reptilia kami akan menghubungi anda dalam 24 jam.",
+      "error": "Gagal menghantar mesej. Sila cuba lagi atau hubungi kami secara langsung.",
+      "required": "*"
+    },
+    "serviceTypes": {
+      "general": "Pertanyaan Umum",
+      "shipping": "Sebut Harga Penghantaran Reptilia",
+      "tracking": "Jejak Penghantaran Saya",
+      "documentation": "Dokumentasi CITES",
+      "emergency": "Pengangkutan Kecemasan",
+      "partnership": "Perkongsian Pembiakbaka"
+    },
+    "info": {
+      "title": "Pakar Penghantaran Reptilia",
+      "description": "Bersedia untuk menghantar reptilia anda ke Asia? Pasukan pakar kami mengendalikan segala-galanya dari pengangkutan berkawal iklim hingga dokumentasi CITES untuk penghantaran antarabangsa yang selamat dan sah.",
+      "quickContact": "Hubungan Pantas",
+      "emergencyTitle": "Pengangkutan Reptilia Kecemasan",
+      "emergencyDesc": "Untuk penghantaran reptilia mendesak atau kecemasan pengangkutan",
+      "servicesTitle": "Perkhidmatan Reptilia Kami",
+      "climateTransport": "Pengangkutan Berkawal Iklim",
+      "citesDoc": "Dokumentasi CITES",
+      "europeAsiaShipping": "Penghantaran Eropah ke Asia",
+      "animalWelfare": "Keutamaan Kebajikan Haiwan"
+    },
+    "offices": {
+      "title": "Rangkaian Pengangkutan Reptilia Kami",
+      "description": "Lokasi strategik di seluruh Eropah dan Asia untuk penghantaran reptilia yang lancar",
+      "amsterdam": "Ibu Pejabat Eropah, Belanda",
+      "rome": "Hab Eropah Tengah, Rom",
+      "singapore": "Pusat Operasi Asia",
+      "hongkong": "Pejabat Pintu Masuk China"
+    },
+    "map": {
+      "title": "Ibu Pejabat Eropah",
+      "description": "Lawati kemudahan reptilia utama kami di Amsterdam",
+      "placeholder": "Peta Hab Pengangkutan Reptilia",
+      "coming": "Peta laluan penghantaran interaktif akan datang"
+    }
+  },
+  "gallery": {
+    "title": "Kerja Kami dalam Tindakan",
+    "description": "Terokai galeri kami yang mempamerkan pengangkutan reptilia, peralatan khusus, dan penghantaran berjaya di seluruh Eropah dan Asia",
+    "categories": {
+      "all": "Semua",
+      "reptiles": "Reptilia",
+      "equipment": "Peralatan",
+      "process": "Proses"
+    },
+    "images": {
+      "beardedTransport": "Pengangkutan naga berjanggut profesional dengan kawalan iklim",
+      "insulatedBox": "Kotak berpenebat baik untuk pengangkutan reptilia selamat",
+      "climateContainers": "Bekas penghantaran canggih dengan pemantauan suhu",
+      "transportSetup": "Kotak khusus untuk pengangkutan ular besar",
+      "documentation": "Dokumentasi CITES lengkap dan sijil kesihatan",
+      "packaging": "Pembungkusan profesional memastikan keselamatan haiwan semasa pengangkutan",
+      "lizardCollection": "Pelbagai spesies cicak disediakan untuk penghantaran antarabangsa",
+      "monitoring": "Pemantauan dan penjejakan masa nyata sepanjang perjalanan"
+    }
+  },
+  "contactForm": {
+    "title": "Berhubung",
+    "description": "Bersedia untuk menghantar? Hubungi kami untuk sebut harga peribadi",
+    "name": "Nama",
+    "email": "Emel",
+    "subject": "Subjek",
+    "message": "Mesej",
+    "send": "Hantar Mesej",
+    "sending": "Menghantar...",
+    "success": "Mesej berjaya dihantar! Kami akan menghubungi anda tidak lama lagi.",
+    "error": "Gagal menghantar mesej. Sila cuba lagi.",
+    "contactInfo": "Maklumat Hubungan",
+    "phone": "Telefon",
+    "address": "Alamat",
+    "googleMap": "Peta Google"
   }
 }

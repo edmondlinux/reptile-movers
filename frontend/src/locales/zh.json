@@ -163,5 +163,97 @@
     "description": "通过欧洲顶级爬虫运输专家连接亚洲市场。",
     "getQuote": "获取运输报价",
     "email": "邮箱: support@reptilemovers.site"
+  },
+  "contact": {
+    "hero": {
+      "title": "联系我们",
+      "subtitle": "爬虫运输欧盟",
+      "description": "联系我们的爬虫运输专家。我们随时为您提供帮助，将您的爬虫安全运送到亚洲市场。"
+    },
+    "form": {
+      "title": "获取爬虫运输报价",
+      "name": "全名",
+      "email": "电子邮箱",
+      "phone": "电话号码",
+      "company": "繁殖公司/农场",
+      "subject": "主题",
+      "message": "告诉我们您的爬虫、目的地和运输要求",
+      "serviceType": "服务类型",
+      "submit": "获取爬虫运输报价",
+      "sending": "发送中...",
+      "success": "消息发送成功！我们的爬虫专家将在24小时内联系您。",
+      "error": "发送消息失败。请重试或直接联系我们。",
+      "required": "*"
+    },
+    "serviceTypes": {
+      "general": "一般咨询",
+      "shipping": "爬虫运输报价",
+      "tracking": "追踪我的货物",
+      "documentation": "CITES文件",
+      "emergency": "紧急运输",
+      "partnership": "饲养员合作"
+    },
+    "info": {
+      "title": "爬虫运输专家",
+      "description": "准备将您的爬虫运送到亚洲吗？我们的专业团队处理从气候控制运输到CITES文件的一切，确保安全合法的国际运输。",
+      "quickContact": "快速联系",
+      "emergencyTitle": "紧急爬虫运输",
+      "emergencyDesc": "用于紧急爬虫货物或运输紧急情况",
+      "servicesTitle": "我们的爬虫服务",
+      "climateTransport": "气候控制运输",
+      "citesDoc": "CITES文件",
+      "europeAsiaShipping": "欧洲到亚洲运输",
+      "animalWelfare": "动物福利优先"
+    },
+    "offices": {
+      "title": "我们的爬虫运输网络",
+      "description": "遍布欧洲和亚洲的战略位置，实现无缝爬虫运输",
+      "amsterdam": "欧洲总部，荷兰",
+      "rome": "中欧枢纽，罗马",
+      "singapore": "亚洲运营中心",
+      "hongkong": "中国门户办事处"
+    },
+    "map": {
+      "title": "欧洲总部",
+      "description": "参观我们在阿姆斯特丹的主要爬虫设施",
+      "placeholder": "爬虫运输枢纽地图",
+      "coming": "交互式运输路线地图即将推出"
+    }
+  },
+  "gallery": {
+    "title": "我们的工作实况",
+    "description": "探索我们的画廊，展示爬虫运输、专业设备以及在欧洲和亚洲的成功交付",
+    "categories": {
+      "all": "全部",
+      "reptiles": "爬虫",
+      "equipment": "设备",
+      "process": "流程"
+    },
+    "images": {
+      "beardedTransport": "专业鬃狮蜥运输，配备气候控制",
+      "insulatedBox": "为爬虫安全运输而设计的保温箱",
+      "climateContainers": "配备温度监控的最先进运输容器",
+      "transportSetup": "大型蛇类运输专用箱",
+      "documentation": "完整的CITES文件和健康证书",
+      "packaging": "专业包装确保运输过程中动物安全",
+      "lizardCollection": "为国际运输准备的各种蜥蜴物种",
+      "monitoring": "整个旅程的实时监控和追踪"
+    }
+  },
+  "contactForm": {
+    "title": "联系我们",
+    "description": "准备发货？联系我们获取个性化报价",
+    "name": "姓名",
+    "email": "邮箱",
+    "subject": "主题",
+    "message": "消息",
+    "send": "发送消息",
+    "sending": "发送中...",
+    "success": "消息发送成功！我们会尽快回复您。",
+    "error": "发送消息失败。请重试。",
+    "contactInfo": "联系信息",
+    "phone": "电话",
+    "address": "地址",
+    "googleMap": "谷歌地图"
   }
 }

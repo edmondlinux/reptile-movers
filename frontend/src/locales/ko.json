@@ -163,5 +163,97 @@
     "description": "유럽 최고의 파충류 운송 전문가를 통해 아시아 시장과 연결하세요.",
     "getQuote": "배송 견적 받기",
     "email": "이메일: support@reptilemovers.site"
+  },
+  "contact": {
+    "hero": {
+      "title": "연락처",
+      "subtitle": "파충류 운송업체 EU",
+      "description": "파충류 운송 전문가에게 문의하세요. 우리는 귀하의 파충류를 아시아 시장에 안전하게 배송하는 데 도움을 드리기 위해 여기 있습니다."
+    },
+    "form": {
+      "title": "파충류 배송 견적 받기",
+      "name": "성명",
+      "email": "이메일 주소",
+      "phone": "전화번호",
+      "company": "사육 회사/농장",
+      "subject": "제목",
+      "message": "파충류, 목적지 및 배송 요구사항에 대해 알려주세요",
+      "serviceType": "서비스 유형",
+      "submit": "파충류 배송 견적 받기",
+      "sending": "전송 중...",
+      "success": "메시지가 성공적으로 전송되었습니다! 저희 파충류 전문가가 24시간 내에 연락드리겠습니다.",
+      "error": "메시지 전송에 실패했습니다. 다시 시도하거나 직접 연락 주세요.",
+      "required": "*"
+    },
+    "serviceTypes": {
+      "general": "일반 문의",
+      "shipping": "파충류 배송 견적",
+      "tracking": "내 배송 추적",
+      "documentation": "CITES 문서",
+      "emergency": "응급 운송",
+      "partnership": "사육자 파트너십"
+    },
+    "info": {
+      "title": "파충류 배송 전문가",
+      "description": "파충류를 아시아로 배송할 준비가 되셨나요? 저희 전문 팀은 기후 조절 운송부터 CITES 문서까지 모든 것을 처리하여 안전하고 합법적인 국제 배송을 제공합니다.",
+      "quickContact": "빠른 연락",
+      "emergencyTitle": "응급 파충류 운송",
+      "emergencyDesc": "긴급 파충류 배송 또는 운송 응급상황용",
+      "servicesTitle": "저희 파충류 서비스",
+      "climateTransport": "기후 조절 운송",
+      "citesDoc": "CITES 문서",
+      "europeAsiaShipping": "유럽-아시아 배송",
+      "animalWelfare": "동물 복지 우선"
+    },
+    "offices": {
+      "title": "저희 파충류 운송 네트워크",
+      "description": "원활한 파충류 배송을 위한 유럽과 아시아 전역의 전략적 위치",
+      "amsterdam": "유럽 본부, 네덜란드",
+      "rome": "중부 유럽 허브, 로마",
+      "singapore": "아시아 운영 센터",
+      "hongkong": "중국 게이트웨이 사무소"
+    },
+    "map": {
+      "title": "유럽 본부",
+      "description": "암스테르담에 있는 저희 주요 파충류 시설을 방문하세요",
+      "placeholder": "파충류 운송 허브 지도",
+      "coming": "대화형 배송 경로 지도가 곧 제공됩니다"
+    }
+  },
+  "gallery": {
+    "title": "실제 작업 모습",
+    "description": "파충류 운송, 전문 장비, 유럽과 아시아 전역의 성공적인 배송을 보여주는 갤러리를 탐색하세요",
+    "categories": {
+      "all": "전체",
+      "reptiles": "파충류",
+      "equipment": "장비",
+      "process": "과정"
+    },
+    "images": {
+      "beardedTransport": "기후 조절을 갖춘 전문 비어디드 드래곤 운송",
+      "insulatedBox": "안전한 파충류 운송을 위한 잘 절연된 상자",
+      "climateContainers": "온도 모니터링을 갖춘 최첨단 배송 컨테이너",
+      "transportSetup": "대형 뱀 운송을 위한 전문 상자",
+      "documentation": "완전한 CITES 문서 및 건강 증명서",
+      "packaging": "운송 중 동물 안전을 보장하는 전문 포장",
+      "lizardCollection": "국제 배송을 위해 준비된 다양한 도마뱀 종",
+      "monitoring": "여행 전반에 걸친 실시간 모니터링 및 추적"
+    }
+  },
+  "contactForm": {
+    "title": "연락하기",
+    "description": "배송 준비가 되셨나요? 맞춤 견적을 위해 연락 주세요",
+    "name": "이름",
+    "email": "이메일",
+    "subject": "제목",
+    "message": "메시지",
+    "send": "메시지 보내기",
+    "sending": "전송 중...",
+    "success": "메시지가 성공적으로 전송되었습니다! 곧 연락드리겠습니다.",
+    "error": "메시지 전송에 실패했습니다. 다시 시도해 주세요.",
+    "contactInfo": "연락처 정보",
+    "phone": "전화",
+    "address": "주소",
+    "googleMap": "구글 지도"
   }
 }

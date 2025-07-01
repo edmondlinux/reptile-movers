@@ -17,8 +17,10 @@ import {
 } from "lucide-react";
 import { useState } from "react";
 import axios from "../lib/axios";
+import { useTranslation } from "../hooks/useTranslation";
 
 const ContactPage = () => {
+  const { t } = useTranslation();
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -82,37 +84,37 @@ const ContactPage = () => {
   const offices = [
     {
       city: "Amsterdam",
-      address: "European Headquarters, Netherlands",
+      address: t('contact.offices.amsterdam'),
       phone: "support@reptilemovers.site",
       email: "support@reptilemovers.site"
     },
     {
       city: "Rome",
-      address: "Central Europe Hub, Rome",
+      address: t('contact.offices.rome'),
       phone: "support@reptilemovers.site",
       email: "support@reptilemovers.site"
     },
     {
       city: "Singapore",
-      address: "Asian Operations Center",
+      address: t('contact.offices.singapore'),
       phone: "support@reptilemovers.site",
       email: "support@reptilemovers.site"
     },
     {
       city: "Hong Kong",
-      address: "China Gateway Office",
+      address: t('contact.offices.hongkong'),
       phone: "support@reptilemovers.site",
       email: "support@reptilemovers.site"
     }
   ];
 
   const serviceTypes = [
-    { value: "general", label: "General Inquiry" },
-    { value: "shipping", label: "Reptile Shipping Quote" },
-    { value: "tracking", label: "Track My Shipment" },
-    { value: "documentation", label: "CITES Documentation" },
-    { value: "emergency", label: "Emergency Transport" },
-    { value: "partnership", label: "Breeder Partnership" }
+    { value: "general", label: t('contact.serviceTypes.general') },
+    { value: "shipping", label: t('contact.serviceTypes.shipping') },
+    { value: "tracking", label: t('contact.serviceTypes.tracking') },
+    { value: "documentation", label: t('contact.serviceTypes.documentation') },
+    { value: "emergency", label: t('contact.serviceTypes.emergency') },
+    { value: "partnership", label: t('contact.serviceTypes.partnership') }
   ];
 
   return (
@@ -128,11 +130,10 @@ const ContactPage = () => {
             className="text-center"
           >
             <h1 className="text-4xl md:text-6xl font-bold mb-6">
-              Contact <span className="text-emerald-400">Reptile Movers EU</span>
+              {t('contact.hero.title')} <span className="text-emerald-400">{t('contact.hero.subtitle')}</span>
             </h1>
             <p className="text-xl md:text-2xl text-gray-300 max-w-3xl mx-auto">
-              Get in touch with our reptile transportation experts. We're here to help 
-              ship your reptiles safely to Asian markets.
+              {t('contact.hero.description')}
             </p>
           </motion.div>
         </div>
@@ -151,7 +152,7 @@ const ContactPage = () => {
             >
               <div className="flex items-center mb-6">
                 <MessageSquare className="w-8 h-8 text-emerald-600 mr-3" />
-                <h2 className="text-3xl font-bold text-gray-900">Get a Reptile Shipping Quote</h2>
+                <h2 className="text-3xl font-bold text-gray-900">{t('contact.form.title')}</h2>
               </div>
               <form onSubmit={handleSubmit} className="space-y-6">
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -160,7 +161,7 @@ const ContactPage = () => {
                     name="name"
                     value={formData.name}
                     onChange={handleInputChange}
-                    placeholder="Full Name *"
+                    placeholder={`${t('contact.form.name')} ${t('contact.form.required')}`}
                     required
                     className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-emerald-500 text-gray-900"
                   />
@@ -169,7 +170,7 @@ const ContactPage = () => {
                     name="email"
                     value={formData.email}
                     onChange={handleInputChange}
-                    placeholder="Email Address *"
+                    placeholder={`${t('contact.form.email')} ${t('contact.form.required')}`}
                     required
                     className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-emerald-500 text-gray-900"
                   />
@@ -180,7 +181,7 @@ const ContactPage = () => {
                     name="phone"
                     value={formData.phone}
                     onChange={handleInputChange}
-                    placeholder="Phone Number"
+                    placeholder={t('contact.form.phone')}
                     className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-emerald-500 text-gray-900"
                   />
                   <input
@@ -188,7 +189,7 @@ const ContactPage = () => {
                     name="company"
                     value={formData.company}
                     onChange={handleInputChange}
-                    placeholder="Breeding Company/Farm"
+                    placeholder={t('contact.form.company')}
                     className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-emerald-500 text-gray-900"
                   />
                 </div>
@@ -208,7 +209,7 @@ const ContactPage = () => {
                     name="subject"
                     value={formData.subject}
                     onChange={handleInputChange}
-                    placeholder="Subject *"
+                    placeholder={`${t('contact.form.subject')} ${t('contact.form.required')}`}
                     required
                     className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-emerald-500 text-gray-900"
                   />
@@ -217,7 +218,7 @@ const ContactPage = () => {
                   name="message"
                   value={formData.message}
                   onChange={handleInputChange}
-                  placeholder="Tell us about your reptiles, destination, and shipping requirements *"
+                  placeholder={`${t('contact.form.message')} ${t('contact.form.required')}`}
                   required
                   rows="6"
                   className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-emerald-500 text-gray-900"
@@ -227,14 +228,14 @@ const ContactPage = () => {
                 {status === 'success' && (
                   <div className='p-4 bg-green-100 border border-green-400 text-green-700 rounded-lg flex items-center'>
                     <CheckCircle className='w-5 h-5 mr-2' />
-                    Message sent successfully! Our reptile experts will contact you within 24 hours.
+                    {t('contact.form.success')}
                   </div>
                 )}
 
                 {status === 'error' && (
                   <div className='p-4 bg-red-100 border border-red-400 text-red-700 rounded-lg flex items-center'>
                     <AlertCircle className='w-5 h-5 mr-2' />
-                    Failed to send message. Please try again or contact us directly.
+                    {t('contact.form.error')}
                   </div>
                 )}
 
@@ -246,12 +247,12 @@ const ContactPage = () => {
                   {loading ? (
                     <>
                       <div className="animate-spin rounded-full h-5 w-5 border-b-2 border-white mr-2"></div>
-                      Sending...
+                      {t('contact.form.sending')}
                     </>
                   ) : (
                     <>
                       <Send className="w-5 h-5 mr-2" />
-                      Get Reptile Shipping Quote
+                      {t('contact.form.submit')}
                     </>
                   )}
                 </button>
@@ -266,17 +267,15 @@ const ContactPage = () => {
               className="space-y-8"
             >
               <div>
-                <h2 className="text-3xl font-bold text-gray-900 mb-6">Reptile Shipping Experts</h2>
+                <h2 className="text-3xl font-bold text-gray-900 mb-6">{t('contact.info.title')}</h2>
                 <p className="text-lg text-gray-600 mb-8">
-                  Ready to ship your reptiles to Asia? Our specialized team handles 
-                  everything from climate-controlled transport to CITES documentation 
-                  for safe, legal international shipping.
+                  {t('contact.info.description')}
                 </p>
               </div>
 
               {/* Quick Contact */}
               <div className="bg-white rounded-xl p-6 shadow-lg">
-                <h3 className="text-xl font-semibold text-gray-900 mb-4">Quick Contact</h3>
+                <h3 className="text-xl font-semibold text-gray-900 mb-4">{t('contact.info.quickContact')}</h3>
                 <div className="space-y-4">
                   <div className="flex items-center">
                     <Mail className="w-5 h-5 text-emerald-600 mr-3" />
@@ -284,20 +283,20 @@ const ContactPage = () => {
                   </div>
                   <div className="flex items-center">
                     <Clock className="w-5 h-5 text-emerald-600 mr-3" />
-                    <span className="text-gray-700">24/7 Animal Care Support</span>
+                    <span className="text-gray-700">{t('about.monitoring')}</span>
                   </div>
                   <div className="flex items-center">
                     <Heart className="w-5 h-5 text-emerald-600 mr-3" />
-                    <span className="text-gray-700">Expert Reptile Handlers</span>
+                    <span className="text-gray-700">{t('showcase.handlers')}</span>
                   </div>
                 </div>
               </div>
 
               {/* Emergency Contact */}
               <div className="bg-red-50 rounded-xl p-6 border border-red-200">
-                <h3 className="text-xl font-semibold text-red-800 mb-4">Emergency Reptile Transport</h3>
+                <h3 className="text-xl font-semibold text-red-800 mb-4">{t('contact.info.emergencyTitle')}</h3>
                 <p className="text-red-700 mb-3">
-                  For urgent reptile shipments or transport emergencies
+                  {t('contact.info.emergencyDesc')}
                 </p>
                 <div className="flex items-center">
                   <Phone className="w-5 h-5 text-red-600 mr-3" />
@@ -307,23 +306,23 @@ const ContactPage = () => {
 
               {/* Service Features */}
               <div className="bg-emerald-50 rounded-xl p-6 border border-emerald-200">
-                <h3 className="text-xl font-semibold text-emerald-800 mb-4">Our Reptile Services</h3>
+                <h3 className="text-xl font-semibold text-emerald-800 mb-4">{t('contact.info.servicesTitle')}</h3>
                 <div className="space-y-3 text-emerald-700">
                   <div className="flex items-center">
                     <Thermometer className="w-4 h-4 text-emerald-600 mr-2" />
-                    <span>Climate-Controlled Transport</span>
+                    <span>{t('contact.info.climateTransport')}</span>
                   </div>
                   <div className="flex items-center">
                     <FileCheck className="w-4 h-4 text-emerald-600 mr-2" />
-                    <span>CITES Documentation</span>
+                    <span>{t('contact.info.citesDoc')}</span>
                   </div>
                   <div className="flex items-center">
                     <Globe className="w-4 h-4 text-emerald-600 mr-2" />
-                    <span>Europe to Asia Shipping</span>
+                    <span>{t('contact.info.europeAsiaShipping')}</span>
                   </div>
                   <div className="flex items-center">
                     <Heart className="w-4 h-4 text-emerald-600 mr-2" />
-                    <span>Animal Welfare Priority</span>
+                    <span>{t('contact.info.animalWelfare')}</span>
                   </div>
                 </div>
               </div>
@@ -341,9 +340,9 @@ const ContactPage = () => {
             transition={{ duration: 0.8 }}
             className="text-center mb-16"
           >
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Our Reptile Transport Network</h2>
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">{t('contact.offices.title')}</h2>
             <p className="text-xl text-gray-600">
-              Strategic locations across Europe and Asia for seamless reptile shipping
+              {t('contact.offices.description')}
             </p>
           </motion.div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
@@ -384,16 +383,16 @@ const ContactPage = () => {
             transition={{ duration: 0.8 }}
             className="text-center mb-12"
           >
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">European Headquarters</h2>
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">{t('contact.map.title')}</h2>
             <p className="text-xl text-gray-600">
-              Visit our main reptile facility in Amsterdam
+              {t('contact.map.description')}
             </p>
           </motion.div>
           <div className="bg-gray-300 rounded-xl h-96 flex items-center justify-center">
             <div className="text-center">
               <MapPin className="w-16 h-16 text-gray-500 mx-auto mb-4" />
-              <p className="text-gray-600">Reptile Transport Hub Map</p>
-              <p className="text-gray-500 text-sm">Interactive shipping route map coming soon</p>
+              <p className="text-gray-600">{t('contact.map.placeholder')}</p>
+              <p className="text-gray-500 text-sm">{t('contact.map.coming')}</p>
             </div>
           </div>
         </div>

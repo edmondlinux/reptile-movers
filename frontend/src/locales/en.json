@@ -163,5 +163,97 @@
     "description": "Connect with Asian markets through Europe's premier reptile transportation specialists.",
     "getQuote": "Get Shipping Quote",
     "email": "email: support@reptilemovers.site"
+  },
+  "contact": {
+    "hero": {
+      "title": "Contact",
+      "subtitle": "Reptile Movers EU",
+      "description": "Get in touch with our reptile transportation experts. We're here to help ship your reptiles safely to Asian markets."
+    },
+    "form": {
+      "title": "Get a Reptile Shipping Quote",
+      "name": "Full Name",
+      "email": "Email Address",
+      "phone": "Phone Number",
+      "company": "Breeding Company/Farm",
+      "subject": "Subject",
+      "message": "Tell us about your reptiles, destination, and shipping requirements",
+      "serviceType": "Service Type",
+      "submit": "Get Reptile Shipping Quote",
+      "sending": "Sending...",
+      "success": "Message sent successfully! Our reptile experts will contact you within 24 hours.",
+      "error": "Failed to send message. Please try again or contact us directly.",
+      "required": "*"
+    },
+    "serviceTypes": {
+      "general": "General Inquiry",
+      "shipping": "Reptile Shipping Quote",
+      "tracking": "Track My Shipment",
+      "documentation": "CITES Documentation",
+      "emergency": "Emergency Transport",
+      "partnership": "Breeder Partnership"
+    },
+    "info": {
+      "title": "Reptile Shipping Experts",
+      "description": "Ready to ship your reptiles to Asia? Our specialized team handles everything from climate-controlled transport to CITES documentation for safe, legal international shipping.",
+      "quickContact": "Quick Contact",
+      "emergencyTitle": "Emergency Reptile Transport",
+      "emergencyDesc": "For urgent reptile shipments or transport emergencies",
+      "servicesTitle": "Our Reptile Services",
+      "climateTransport": "Climate-Controlled Transport",
+      "citesDoc": "CITES Documentation",
+      "europeAsiaShipping": "Europe to Asia Shipping",
+      "animalWelfare": "Animal Welfare Priority"
+    },
+    "offices": {
+      "title": "Our Reptile Transport Network",
+      "description": "Strategic locations across Europe and Asia for seamless reptile shipping",
+      "amsterdam": "European Headquarters, Netherlands",
+      "rome": "Central Europe Hub, Rome",
+      "singapore": "Asian Operations Center",
+      "hongkong": "China Gateway Office"
+    },
+    "map": {
+      "title": "European Headquarters",
+      "description": "Visit our main reptile facility in Amsterdam",
+      "placeholder": "Reptile Transport Hub Map",
+      "coming": "Interactive shipping route map coming soon"
+    }
+  },
+  "gallery": {
+    "title": "Our Work in Action",
+    "description": "Explore our gallery showcasing reptile transportation, specialized equipment, and successful deliveries across Europe and Asia",
+    "categories": {
+      "all": "All",
+      "reptiles": "Reptiles",
+      "equipment": "Equipment",
+      "process": "Process"
+    },
+    "images": {
+      "beardedTransport": "Professional bearded dragon transportation with climate control",
+      "insulatedBox": "Well insulated box for safe reptile transportation",
+      "climateContainers": "State-of-the-art shipping containers with temperature monitoring",
+      "transportSetup": "Specialized boxes for large snake transportation",
+      "documentation": "Complete CITES documentation and health certificates",
+      "packaging": "Professional packaging ensuring animal safety during transport",
+      "lizardCollection": "Various lizard species prepared for international shipping",
+      "monitoring": "Real-time monitoring and tracking throughout the journey"
+    }
+  },
+  "contactForm": {
+    "title": "Get In Touch",
+    "description": "Ready to ship? Contact us for a personalized quote",
+    "name": "Name",
+    "email": "Email",
+    "subject": "Subject",
+    "message": "Message",
+    "send": "Send Message",
+    "sending": "Sending...",
+    "success": "Message sent successfully! We'll get back to you soon.",
+    "error": "Failed to send message. Please try again.",
+    "contactInfo": "Contact Information",
+    "phone": "Phone",
+    "address": "Address",
+    "googleMap": "Google Map"
   }
 }
