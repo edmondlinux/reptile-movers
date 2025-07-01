@@ -1,0 +1,33 @@
+
+{
+  "nav": {
+    "home": "首页",
+    "about": "关于我们",
+    "team": "团队",
+    "testimonials": "客户评价",
+    "contact": "联系我们",
+    "track": "追踪",
+    "myShipments": "我的货物",
+    "dashboard": "仪表板",
+    "logOut": "退出登录",
+    "signUp": "注册",
+    "login": "登录",
+    "language": "语言"
+  },
+  "languages": {
+    "en": "English",
+    "zh": "中文",
+    "ms": "Bahasa Malaysia",
+    "ko": "한국어"
+  },
+  "common": {
+    "loading": "加载中...",
+    "error": "错误",
+    "success": "成功",
+    "cancel": "取消",
+    "save": "保存",
+    "delete": "删除",
+    "edit": "编辑",
+    "submit": "提交"
+  }
+}

@@ -1,0 +1,33 @@
+
+{
+  "nav": {
+    "home": "Laman Utama",
+    "about": "Tentang Kami",
+    "team": "Pasukan",
+    "testimonials": "Testimoni",
+    "contact": "Hubungi Kami",
+    "track": "Jejak",
+    "myShipments": "Penghantaran Saya",
+    "dashboard": "Papan Pemuka",
+    "logOut": "Log Keluar",
+    "signUp": "Daftar",
+    "login": "Log Masuk",
+    "language": "Bahasa"
+  },
+  "languages": {
+    "en": "English",
+    "zh": "中文",
+    "ms": "Bahasa Malaysia",
+    "ko": "한국어"
+  },
+  "common": {
+    "loading": "Memuatkan...",
+    "error": "Ralat",
+    "success": "Berjaya",
+    "cancel": "Batal",
+    "save": "Simpan",
+    "delete": "Padam",
+    "edit": "Sunting",
+    "submit": "Hantar"
+  }
+}

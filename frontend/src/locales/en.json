@@ -1,0 +1,33 @@
+
+{
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "team": "Team",
+    "testimonials": "Testimonials",
+    "contact": "Contact",
+    "track": "Track",
+    "myShipments": "My Shipments",
+    "dashboard": "Dashboard",
+    "logOut": "Log Out",
+    "signUp": "Sign Up",
+    "login": "Login",
+    "language": "Language"
+  },
+  "languages": {
+    "en": "English",
+    "zh": "中文",
+    "ms": "Bahasa Malaysia",
+    "ko": "한국어"
+  },
+  "common": {
+    "loading": "Loading...",
+    "error": "Error",
+    "success": "Success",
+    "cancel": "Cancel",
+    "save": "Save",
+    "delete": "Delete",
+    "edit": "Edit",
+    "submit": "Submit"
+  }
+}

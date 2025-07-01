@@ -3,19 +3,20 @@ import { Toaster } from "react-hot-toast";
 import { useEffect } from "react";
 
 import HomePage from "./pages/HomePage";
-import AboutPage from "./pages/AboutPage";
-import TeamPage from "./pages/TeamPage";
-import TestimonialsPage from "./pages/TestimonialsPage";
-import ContactPage from "./pages/ContactPage";
 import SignUpPage from "./pages/SignUpPage";
 import LoginPage from "./pages/LoginPage";
 import AdminPage from "./pages/AdminPage";
-import TrackPage from "./pages/TrackPage";
-import ShipmentsPage from "./pages/ShipmentsPage";
-
 import Navbar from "./components/Navbar";
 import { useUserStore } from "./stores/useUserStore";
 import LoadingSpinner from "./components/LoadingSpinner";
+import ContactPage from "./pages/ContactPage";
+import AboutPage from "./pages/AboutPage";
+import TeamPage from "./pages/TeamPage";
+import TestimonialsPage from "./pages/TestimonialsPage";
+import TrackPage from "./pages/TrackPage";
+import ShipmentsPage from "./pages/ShipmentsPage";
+
+import "./i18n";
 
 function App() {
 	const { user, checkAuth, checkingAuth } = useUserStore();

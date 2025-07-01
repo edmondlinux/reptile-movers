@@ -2,9 +2,12 @@ import { Package, UserPlus, LogIn, LogOut, Lock, Truck, Menu, X } from "lucide-r
 import { Link } from "react-router-dom";
 import { useUserStore } from "../stores/useUserStore";
 import { useState } from "react";
+import { useTranslation } from "react-i18next";
+import LanguageSwitcher from "./LanguageSwitcher";
 
 const Navbar = () => {
 	const { user, logout } = useUserStore();
+	const { t } = useTranslation();
 	const isAdmin = user?.role === "admin";
 	const [isMenuOpen, setIsMenuOpen] = useState(false);
 
@@ -27,37 +30,37 @@ const Navbar = () => {
 							to={"/"}
 							className='text-gray-300 hover:text-emerald-400 transition duration-300 ease-in-out'
 						>
-							Home
+							{t('nav.home')}
 						</Link>
 						<Link
 							to={"/about"}
 							className='text-gray-300 hover:text-emerald-400 transition duration-300 ease-in-out'
 						>
-							About
+							{t('nav.about')}
 						</Link>
 						<Link
 							to={"/team"}
 							className='text-gray-300 hover:text-emerald-400 transition duration-300 ease-in-out'
 						>
-							Team
+							{t('nav.team')}
 						</Link>
 						<Link
 							to={"/testimonials"}
 							className='text-gray-300 hover:text-emerald-400 transition duration-300 ease-in-out'
 						>
-							Testimonials
+							{t('nav.testimonials')}
 						</Link>
 						<Link
 							to={"/contact"}
 							className='text-gray-300 hover:text-emerald-400 transition duration-300 ease-in-out'
 						>
-							Contact
+							{t('nav.contact')}
 						</Link>
 						<Link
 							to={"/track"}
 							className='text-gray-300 hover:text-emerald-400 transition duration-300 ease-in-out'
 						>
-							Track
+							{t('nav.track')}
 						</Link>
 						{user && (
 							<Link
@@ -65,7 +68,7 @@ const Navbar = () => {
 								className='relative group text-gray-300 hover:text-emerald-400 transition duration-300 ease-in-out flex items-center'
 							>
 								<Package className='inline-block mr-1 group-hover:text-emerald-400' size={18} />
-								<span>My Shipments</span>
+								<span>{t('nav.myShipments')}</span>
 							</Link>
 						)}
 						{isAdmin && (
@@ -74,9 +77,11 @@ const Navbar = () => {
 								to={"/admin-dashboard"}
 							>
 								<Lock className='inline-block mr-1' size={16} />
-								<span>Dashboard</span>
+								<span>{t('nav.dashboard')}</span>
 							</Link>
 						)}
+
+						<LanguageSwitcher />
 
 						{user ? (
 							<button
@@ -84,7 +89,7 @@ const Navbar = () => {
 								onClick={logout}
 							>
 								<LogOut size={16} />
-								<span className='ml-2'>Log Out</span>
+								<span className='ml-2'>{t('nav.logOut')}</span>
 							</button>
 						) : (
 							<>
@@ -93,14 +98,14 @@ const Navbar = () => {
 									className='bg-emerald-600 hover:bg-emerald-700 text-white py-2 px-4 rounded-md flex items-center transition duration-300 ease-in-out'
 								>
 									<UserPlus className='mr-2' size={16} />
-									Sign Up
+									{t('nav.signUp')}
 								</Link>
 								<Link
 									to={"/login"}
 									className='bg-gray-700 hover:bg-gray-600 text-white py-2 px-4 rounded-md flex items-center transition duration-300 ease-in-out'
 								>
 									<LogIn className='mr-2' size={16} />
-									Login
+									{t('nav.login')}
 								</Link>
 							</>
 						)}
@@ -125,42 +130,42 @@ const Navbar = () => {
 								className='text-gray-300 hover:text-emerald-400 transition duration-300 ease-in-out py-2'
 								onClick={closeMenu}
 							>
-								Home
+								{t('nav.home')}
 							</Link>
 							<Link
 								to={"/about"}
 								className='text-gray-300 hover:text-emerald-400 transition duration-300 ease-in-out py-2'
 								onClick={closeMenu}
 							>
-								About
+								{t('nav.about')}
 							</Link>
 							<Link
 								to={"/team"}
 								className='text-gray-300 hover:text-emerald-400 transition duration-300 ease-in-out py-2'
 								onClick={closeMenu}
 							>
-								Team
+								{t('nav.team')}
 							</Link>
 							<Link
 								to={"/testimonials"}
 								className='text-gray-300 hover:text-emerald-400 transition duration-300 ease-in-out py-2'
 								onClick={closeMenu}
 							>
-								Testimonials
+								{t('nav.testimonials')}
 							</Link>
 							<Link
 								to={"/contact"}
 								className='text-gray-300 hover:text-emerald-400 transition duration-300 ease-in-out py-2'
 								onClick={closeMenu}
 							>
-								Contact
+								{t('nav.contact')}
 							</Link>
 							<Link
 								to={"/track"}
 								className='text-gray-300 hover:text-emerald-400 transition duration-300 ease-in-out py-2'
 								onClick={closeMenu}
 							>
-								Track
+								{t('nav.track')}
 							</Link>
 							{user && (
 								<Link
@@ -169,7 +174,7 @@ const Navbar = () => {
 									onClick={closeMenu}
 								>
 									<Package className='mr-2' size={18} />
-									My Shipments
+									{t('nav.myShipments')}
 								</Link>
 							)}
 							{isAdmin && (
@@ -179,9 +184,13 @@ const Navbar = () => {
 									onClick={closeMenu}
 								>
 									<Lock className='mr-2' size={16} />
-									Dashboard
+									{t('nav.dashboard')}
 								</Link>
 							)}
+
+							<div className='py-2'>
+								<LanguageSwitcher />
+							</div>
 
 							<div className='pt-2 border-t border-gray-700'>
 								{user ? (
@@ -193,7 +202,7 @@ const Navbar = () => {
 										}}
 									>
 										<LogOut size={16} />
-										<span className='ml-2'>Log Out</span>
+										<span className='ml-2'>{t('nav.logOut')}</span>
 									</button>
 								) : (
 									<div className='flex flex-col space-y-3'>
@@ -203,7 +212,7 @@ const Navbar = () => {
 											onClick={closeMenu}
 										>
 											<UserPlus className='mr-2' size={16} />
-											Sign Up
+											{t('nav.signUp')}
 										</Link>
 										<Link
 											to={"/login"}
@@ -211,7 +220,7 @@ const Navbar = () => {
 											onClick={closeMenu}
 										>
 											<LogIn className='mr-2' size={16} />
-											Login
+											{t('nav.login')}
 										</Link>
 									</div>
 								)}
