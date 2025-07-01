@@ -1,4 +1,3 @@
-
 import { motion } from "framer-motion";
 import { 
   MapPin, 
@@ -85,26 +84,26 @@ const ContactPage = () => {
     {
       city: "Amsterdam",
       address: t('contact.offices.amsterdam'),
-      phone: "support@reptilemovers.site",
-      email: "support@reptilemovers.site"
+      phone: "support@reptileglobal.site",
+      email: "support@reptileglobal.site"
     },
     {
       city: "Rome",
       address: t('contact.offices.rome'),
-      phone: "support@reptilemovers.site",
-      email: "support@reptilemovers.site"
+      phone: "support@reptileglobal.site",
+      email: "support@reptileglobal.site"
     },
     {
       city: "Singapore",
       address: t('contact.offices.singapore'),
-      phone: "support@reptilemovers.site",
-      email: "support@reptilemovers.site"
+      phone: "support@reptileglobal.site",
+      email: "support@reptileglobal.site"
     },
     {
       city: "Hong Kong",
       address: t('contact.offices.hongkong'),
-      phone: "support@reptilemovers.site",
-      email: "support@reptilemovers.site"
+      phone: "support@reptileglobal.site",
+      email: "support@reptileglobal.site"
     }
   ];
 
@@ -223,7 +222,7 @@ const ContactPage = () => {
                   rows="6"
                   className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-emerald-500 text-gray-900"
                 />
-                
+
                 {/* Status Messages */}
                 {status === 'success' && (
                   <div className='p-4 bg-green-100 border border-green-400 text-green-700 rounded-lg flex items-center'>
@@ -279,7 +278,7 @@ const ContactPage = () => {
                 <div className="space-y-4">
                   <div className="flex items-center">
                     <Mail className="w-5 h-5 text-emerald-600 mr-3" />
-                    <span className="text-gray-700">support@reptilemovers.site</span>
+                    <span className="text-gray-700">support@reptileglobal.site</span>
                   </div>
                   <div className="flex items-center">
                     <Clock className="w-5 h-5 text-emerald-600 mr-3" />
@@ -300,7 +299,7 @@ const ContactPage = () => {
                 </p>
                 <div className="flex items-center">
                   <Phone className="w-5 h-5 text-red-600 mr-3" />
-                  <span className="text-gray-700">support@reptilemovers.site</span>
+                  <span className="text-gray-700">support@reptileglobal.site</span>
                 </div>
               </div>
 
