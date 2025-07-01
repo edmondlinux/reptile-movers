@@ -163,50 +163,5 @@
     "description": "Berhubung dengan pasaran Asia melalui pakar pengangkutan reptilia terkemuka Eropah.",
     "getQuote": "Dapatkan Sebut Harga Penghantaran",
     "email": "emel: support@reptilemovers.site"
-  },
-  "contact": {
-    "title": "Hubungi Kami",
-    "subtitle": "Berhubung dengan Pakar Penghantaran Reptilia Kami",
-    "description": "Bersedia untuk menghantar reptilia anda dengan selamat merentasi Eropah dan Asia? Hubungi pasukan pakar kami untuk sebut harga yang diperibadikan dan panduan pakar.",
-    "form": {
-      "name": "Nama",
-      "namePlaceholder": "Nama penuh anda",
-      "email": "Emel",
-      "emailPlaceholder": "your.email@example.com",
-      "phone": "Telefon",
-      "phonePlaceholder": "Nombor telefon anda",
-      "subject": "Subjek",
-      "subjectPlaceholder": "Apa yang boleh kami bantu?",
-      "message": "Mesej",
-      "messagePlaceholder": "Beritahu kami tentang keperluan penghantaran reptilia anda...",
-      "submit": "Hantar Mesej",
-      "sending": "Menghantar...",
-      "success": "Mesej berjaya dihantar!",
-      "error": "Gagal menghantar mesej. Sila cuba lagi."
-    },
-    "info": {
-      "title": "Maklumat Hubungan",
-      "address": "123 Logistics Avenue, Amsterdam, Netherlands",
-      "phone": "+31 20 123 4567",
-      "email": "support@reptilemovers.site",
-      "hours": "Isnin-Jumaat: 8:00 AM - 6:00 PM CET"
-    },
-    "specialties": {
-      "title": "Kepakaran Kami",
-      "climateControl": "Pengangkutan reptilia berkawal iklim",
-      "documentation": "Dokumentasi CITES lengkap",
-      "quarantine": "Kemudahan kuarantin bertauliah",
-      "network": "Rangkaian penghantaran Eropah ke Asia"
-    }
-  },
-  "gallery": {
-    "title": "Kerja Kami dalam Tindakan",
-    "description": "Lihat kemudahan dan operasi pengangkutan reptilia profesional kami di Eropah dan Asia",
-    "climateVehicles": "Kenderaan Berkawal Iklim",
-    "quarantineFacilities": "Kemudahan Kuarantin",
-    "expertHandling": "Pengendalian Reptilia Pakar",
-    "asianNetwork": "Rangkaian Pengedaran Asia",
-    "breedingPartners": "Rakan Kongsi Pembiakan",
-    "documentation": "Dokumentasi CITES"
   }
 }
