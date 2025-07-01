@@ -1,6 +1,10 @@
+
 import React from 'react';
+import { useTranslation } from '../hooks/useTranslation';
 
 const PartnersSection = () => {
+	const { t } = useTranslation();
+	
 	const partners = [
 		{
 			name: "FedEx",
@@ -47,11 +51,10 @@ const PartnersSection = () => {
 			<div className='max-w-7xl mx-auto px-4 sm:px-6 lg:px-8'>
 				<div className='text-center mb-12'>
 					<h2 className='text-2xl md:text-3xl font-bold text-gray-900 mb-4'>
-						Trusted by Industry Leaders
+						{t('partners.title')}
 					</h2>
 					<p className='text-lg text-gray-600 max-w-2xl mx-auto'>
-						We partner with the world's leading logistics companies to provide you with 
-						comprehensive shipping solutions and global coverage.
+						{t('partners.description')}
 					</p>
 				</div>
 
@@ -88,7 +91,7 @@ const PartnersSection = () => {
 
 				<div className='text-center mt-12'>
 					<p className='text-gray-500 text-sm'>
-						And many more trusted partners worldwide
+						{t('partners.morePartners')}
 					</p>
 				</div>
 			</div>

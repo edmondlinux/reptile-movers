@@ -1,7 +1,7 @@
 
 import { useState } from 'react';
-import { useTranslation } from 'react-i18next';
-import { ChevronDown, Globe } from 'lucide-react';
+import { Globe, ChevronDown } from 'lucide-react';
+import { useTranslation } from '../hooks/useTranslation';
 
 const LanguageSwitcher = () => {
   const { i18n, t } = useTranslation();
@@ -35,30 +35,24 @@ const LanguageSwitcher = () => {
       </button>
 
       {isOpen && (
-        <>
-          <div 
-            className="fixed inset-0 z-10" 
-            onClick={() => setIsOpen(false)}
-          />
-          <div className="absolute right-0 mt-2 w-48 bg-gray-800 rounded-md shadow-lg z-20 border border-gray-700">
-            <div className="py-1">
-              {languages.map((language) => (
-                <button
-                  key={language.code}
-                  onClick={() => handleLanguageChange(language.code)}
-                  className={`w-full text-left px-4 py-2 text-sm transition duration-300 ease-in-out flex items-center space-x-3 ${
-                    i18n.language === language.code
-                      ? 'bg-emerald-600 text-white'
-                      : 'text-gray-300 hover:bg-gray-700 hover:text-emerald-400'
-                  }`}
-                >
-                  <span className="text-lg">{language.flag}</span>
-                  <span>{language.name}</span>
-                </button>
-              ))}
-            </div>
+        <div className="absolute right-0 mt-2 w-48 bg-gray-800 rounded-md shadow-lg z-50 border border-gray-700">
+          <div className="py-1">
+            {languages.map((language) => (
+              <button
+                key={language.code}
+                onClick={() => handleLanguageChange(language.code)}
+                className={`flex items-center space-x-3 w-full px-4 py-2 text-left text-sm transition duration-300 ease-in-out ${
+                  i18n.language === language.code
+                    ? 'bg-emerald-600 text-white'
+                    : 'text-gray-300 hover:bg-gray-700 hover:text-emerald-400'
+                }`}
+              >
+                <span>{language.flag}</span>
+                <span>{language.name}</span>
+              </button>
+            ))}
           </div>
-        </>
+        </div>
       )}
     </div>
   );

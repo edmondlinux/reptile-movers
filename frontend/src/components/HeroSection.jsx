@@ -1,6 +1,8 @@
+
 import { useEffect, useState } from "react";
 import { Package, ArrowRight, Search, X } from "lucide-react";
 import { useShipmentStore } from "../stores/useShipmentStore";
+import { useTranslation } from "../hooks/useTranslation";
 
 // Reptile and nature themed background images
 const backgroundImages = [
@@ -15,6 +17,7 @@ const HeroSection = () => {
 	const [showTrackingInput, setShowTrackingInput] = useState(false);
 	const [trackingNumber, setTrackingNumber] = useState("");
 	const { trackShipment, loading } = useShipmentStore();
+	const { t } = useTranslation();
 
 	useEffect(() => {
 		const interval = setInterval(() => {
@@ -79,18 +82,17 @@ const HeroSection = () => {
 			{/* Main Content */}
 			<div className="relative z-20 text-center max-w-4xl mx-auto px-4">
 				<h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight">
-					Reptile Movers
-					<span className="text-emerald-400 block">EU</span>
+					{t('hero.title')}
+					<span className="text-emerald-400 block">{t('hero.subtitle')}</span>
 				</h1>
 				<p className="text-xl md:text-2xl mb-8 text-gray-300 max-w-2xl mx-auto">
-					Specialized reptile transportation services across Europe and Asia. 
-					Safe, climate-controlled shipping for your precious reptiles to China, Malaysia, Korea, and beyond.
+					{t('hero.description')}
 				</p>
 				<div className="flex flex-col gap-4 justify-center">
 					{!showTrackingInput && (
 						<div className="flex flex-col sm:flex-row gap-4 justify-center">
 							<button className="bg-emerald-600 hover:bg-emerald-700 px-8 py-4 rounded-lg font-semibold text-lg transition duration-300 flex items-center justify-center group">
-								Get a Quote
+								{t('hero.getQuote')}
 								<ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
 							</button>
 							<button 
@@ -98,7 +100,7 @@ const HeroSection = () => {
 								className="border-2 border-white hover:bg-white hover:text-gray-900 px-8 py-4 rounded-lg font-semibold text-lg transition duration-300 flex items-center justify-center group"
 							>
 								<Search className="mr-2 w-5 h-5" />
-								Track Shipment
+								{t('hero.trackShipment')}
 							</button>
 						</div>
 					)}
@@ -111,7 +113,7 @@ const HeroSection = () => {
 									type="text"
 									value={trackingNumber}
 									onChange={(e) => setTrackingNumber(e.target.value)}
-									placeholder="Enter tracking number..."
+									placeholder={t('hero.enterTracking')}
 									className="bg-white bg-opacity-20 border border-white border-opacity-30 rounded-lg px-4 py-3 text-white placeholder-gray-300 focus:outline-none focus:ring-2 focus:ring-emerald-400 focus:border-transparent backdrop-blur-sm"
 								/>
 								<div className="flex gap-2">
@@ -121,7 +123,7 @@ const HeroSection = () => {
 										className="bg-emerald-600 hover:bg-emerald-700 px-6 py-3 rounded-lg font-semibold transition duration-300 disabled:opacity-50 disabled:cursor-not-allowed flex items-center justify-center flex-1"
 									>
 										<Search className="mr-2 w-4 h-4" />
-										{loading ? "Tracking your shipment..." : "Track Now"}
+										{loading ? t('hero.tracking') : t('hero.trackNow')}
 									</button>
 									<button 
 										type="button"
