@@ -257,13 +257,22 @@
     "googleMap": "구글 지도"
   },
   "tracking": {
+    "title": "배송 추적",
+    "subtitle": "실시간 업데이트를 받으려면 추적 번호를 입력하세요",
     "currentLocation": "현재 위치",
     "estimatedDelivery": "예상 배송일",
     "history": "추적 기록",
     "notFound": "배송을 찾을 수 없습니다",
     "checkNumber": "추적 번호를 확인하고 다시 시도해 주세요",
     "readyToTrack": "추적 준비",
-    "enterNumber": "시작하려면 위에 추적 번호를 입력하세요"
+    "enterNumber": "시작하려면 위에 추적 번호를 입력하세요",
+    "trackingNumber": "추적 번호",
+    "clearResults": "← 결과 지우기",
+    "downloadPDF": "PDF 다운로드",
+    "from": "발신인",
+    "to": "수신인",
+    "packageDetails": "패키지 세부사항",
+    "serviceDetails": "서비스 세부사항"
   },
   "shipping": {
     "from": "발신인",

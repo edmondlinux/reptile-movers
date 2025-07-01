@@ -257,13 +257,22 @@
     "googleMap": "谷歌地图"
   },
   "tracking": {
+    "title": "追踪您的货物",
+    "subtitle": "输入您的追踪号码获取实时更新",
     "currentLocation": "当前位置",
     "estimatedDelivery": "预计送达",
     "history": "追踪历史",
     "notFound": "未找到货物",
     "checkNumber": "请检查您的追踪号码并重试",
     "readyToTrack": "准备追踪",
-    "enterNumber": "在上方输入追踪号码开始"
+    "enterNumber": "在上方输入追踪号码开始",
+    "trackingNumber": "追踪号码",
+    "clearResults": "← 清除结果",
+    "downloadPDF": "下载PDF",
+    "from": "发件人",
+    "to": "收件人",
+    "packageDetails": "包裹详情",
+    "serviceDetails": "服务详情"
   },
   "shipping": {
     "from": "发件人",

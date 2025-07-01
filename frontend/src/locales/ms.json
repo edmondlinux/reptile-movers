@@ -257,13 +257,22 @@
     "googleMap": "Peta Google"
   },
   "tracking": {
+    "title": "Jejak Penghantaran Anda",
+    "subtitle": "Masukkan nombor penjejakan anda untuk mendapat kemas kini masa nyata",
     "currentLocation": "Lokasi Semasa",
     "estimatedDelivery": "Anggaran Penghantaran",
     "history": "Sejarah Penjejakan",
     "notFound": "Tiada penghantaran dijumpai",
     "checkNumber": "Sila semak nombor penjejakan anda dan cuba lagi",
     "readyToTrack": "Sedia untuk jejak",
-    "enterNumber": "Masukkan nombor penjejakan di atas untuk bermula"
+    "enterNumber": "Masukkan nombor penjejakan di atas untuk bermula",
+    "trackingNumber": "Nombor Penjejakan",
+    "clearResults": "← Kosongkan Hasil",
+    "downloadPDF": "Muat Turun PDF",
+    "from": "Dari",
+    "to": "Kepada",
+    "packageDetails": "Butiran Pakej",
+    "serviceDetails": "Butiran Perkhidmatan"
   },
   "shipping": {
     "from": "Dari",

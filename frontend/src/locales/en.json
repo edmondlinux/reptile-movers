@@ -257,13 +257,22 @@
     "googleMap": "Google Map"
   },
   "tracking": {
+    "title": "Track Your Shipment",
+    "subtitle": "Enter your tracking number to get real-time updates",
     "currentLocation": "Current Location",
     "estimatedDelivery": "Estimated Delivery",
     "history": "Tracking History",
     "notFound": "No shipment found",
     "checkNumber": "Please check your tracking number and try again",
     "readyToTrack": "Ready to track",
-    "enterNumber": "Enter a tracking number above to get started"
+    "enterNumber": "Enter a tracking number above to get started",
+    "trackingNumber": "Tracking Number",
+    "clearResults": "← Clear Results",
+    "downloadPDF": "Download PDF",
+    "from": "From",
+    "to": "To",
+    "packageDetails": "Package Details",
+    "serviceDetails": "Service Details"
   },
   "shipping": {
     "from": "From",

@@ -99,9 +99,9 @@ const TrackPage = () => {
 			<div className='max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-12'>
 				<div className='text-center mb-12'>
 					<h1 className='text-4xl font-bold text-emerald-400 mb-3'>
-						Track Your Shipment
+						{t('tracking.title')}
 					</h1>
-					<p className='text-gray-400 text-lg'>Enter your tracking number to get real-time updates</p>
+					<p className='text-gray-400 text-lg'>{t('tracking.subtitle')}</p>
 				</div>
 
 				{/* Search Form */}
@@ -137,7 +137,7 @@ const TrackPage = () => {
 								className='bg-blue-600 hover:bg-blue-700 px-4 py-2 rounded-lg font-medium transition-all duration-300 flex items-center gap-2 shadow-lg hover:shadow-blue-500/25'
 							>
 								<Download className="w-4 h-4" />
-								Download PDF
+								{t('tracking.downloadPDF')}
 							</button>
 							<button
 								onClick={() => {
@@ -146,7 +146,7 @@ const TrackPage = () => {
 								}}
 								className='text-emerald-400 hover:text-emerald-300 text-sm font-medium transition-colors'
 							>
-								← Clear Results
+								{t('tracking.clearResults')}
 							</button>
 						</div>
 					)}
@@ -162,7 +162,7 @@ const TrackPage = () => {
 									<h2 className='text-2xl font-bold text-white mb-2'>
 										{currentShipment.trackingNumber}
 									</h2>
-									<p className='text-gray-400'>Tracking Number</p>
+									<p className='text-gray-400'>{t('tracking.trackingNumber')}</p>
 								</div>
 
 								<div className={`px-4 py-2 rounded-full ${getStatusColor(currentShipment.status)} border`}>
@@ -180,7 +180,7 @@ const TrackPage = () => {
 									<div className='flex items-center gap-3 p-4 bg-gray-700/30 rounded-lg'>
 										<MapPin className="w-5 h-5 text-emerald-400" />
 										<div>
-											<p className='text-sm text-gray-400'>Current Location</p>
+											<p className='text-sm text-gray-400'>{t('tracking.currentLocation')}</p>
 											<p className='font-medium text-white'>{currentShipment.currentLocation}</p>
 										</div>
 									</div>
@@ -190,7 +190,7 @@ const TrackPage = () => {
 									<div className='flex items-center gap-3 p-4 bg-gray-700/30 rounded-lg'>
 										<Calendar className="w-5 h-5 text-emerald-400" />
 										<div>
-											<p className='text-sm text-gray-400'>Estimated Delivery</p>
+											<p className='text-sm text-gray-400'>{t('tracking.estimatedDelivery')}</p>
 											<p className='font-medium text-white'>{new Date(currentShipment.estimatedDelivery).toLocaleDateString()}</p>
 										</div>
 									</div>
@@ -205,7 +205,7 @@ const TrackPage = () => {
 									<div className='p-2 bg-blue-500/20 rounded-lg'>
 										<User className="w-5 h-5 text-blue-400" />
 									</div>
-									<h3 className='text-lg font-semibold text-blue-400'>From</h3>
+									<h3 className='text-lg font-semibold text-blue-400'>{t('tracking.from')}</h3>
 								</div>
 								<div className='space-y-2'>
 									<p className='font-medium text-white text-lg'>{currentShipment.sender.name}</p>
@@ -222,7 +222,7 @@ const TrackPage = () => {
 									<div className='p-2 bg-green-500/20 rounded-lg'>
 										<User className="w-5 h-5 text-green-400" />
 									</div>
-									<h3 className='text-lg font-semibold text-green-400'>To</h3>
+									<h3 className='text-lg font-semibold text-green-400'>{t('tracking.to')}</h3>
 								</div>
 								<div className='space-y-2'>
 									<p className='font-medium text-white text-lg'>{currentShipment.recipient.name}</p>
@@ -243,7 +243,7 @@ const TrackPage = () => {
 									<div className='p-2 bg-emerald-500/20 rounded-lg'>
 										<Package className="w-5 h-5 text-emerald-400" />
 									</div>
-									<h3 className='text-lg font-semibold text-emerald-400'>Package Details</h3>
+									<h3 className='text-lg font-semibold text-emerald-400'>{t('tracking.packageDetails')}</h3>
 								</div>
 
 								<div className='space-y-4'>
@@ -292,7 +292,7 @@ const TrackPage = () => {
 									<div className='p-2 bg-emerald-500/20 rounded-lg'>
 										<Truck className="w-5 h-5 text-emerald-400" />
 									</div>
-									<h3 className='text-lg font-semibold text-emerald-400'>Service Details</h3>
+									<h3 className='text-lg font-semibold text-emerald-400'>{t('tracking.serviceDetails')}</h3>
 								</div>
 
 								<div className='space-y-4'>
@@ -346,7 +346,7 @@ const TrackPage = () => {
 									<div className='p-2 bg-emerald-500/20 rounded-lg'>
 										<MapPin className="w-5 h-5 text-emerald-400" />
 									</div>
-									<h3 className='text-lg font-semibold text-emerald-400'>Current Location</h3>
+									<h3 className='text-lg font-semibold text-emerald-400'>{t('tracking.currentLocation')}</h3>
 								</div>
 								<div className='rounded-lg overflow-hidden'>
 									<OpenStreetMap 
@@ -365,7 +365,7 @@ const TrackPage = () => {
 									<div className='p-2 bg-emerald-500/20 rounded-lg'>
 										<Clock className="w-5 h-5 text-emerald-400" />
 									</div>
-									<h3 className='text-lg font-semibold text-emerald-400'>Tracking History</h3>
+									<h3 className='text-lg font-semibold text-emerald-400'>{t('tracking.history')}</h3>
 								</div>
 								<div className='space-y-3'>
 									{currentShipment.trackingHistory.map((event, index) => (
@@ -402,8 +402,8 @@ const TrackPage = () => {
 				{!currentShipment && !loading && trackingNumber && (
 					<div className='bg-gray-800/50 backdrop-blur border border-gray-700/50 rounded-xl p-12 text-center shadow-lg'>
 						<Package className='w-16 h-16 text-gray-500 mx-auto mb-4' />
-						<h3 className='text-xl font-semibold text-gray-300 mb-2'>No shipment found</h3>
-						<p className='text-gray-400'>Please check your tracking number and try again</p>
+						<h3 className='text-xl font-semibold text-gray-300 mb-2'>{t('tracking.notFound')}</h3>
+						<p className='text-gray-400'>{t('tracking.checkNumber')}</p>
 					</div>
 				)}
 
@@ -411,8 +411,8 @@ const TrackPage = () => {
 				{!currentShipment && !loading && !trackingNumber && (
 					<div className='bg-gray-800/30 backdrop-blur border border-gray-700/30 rounded-xl p-12 text-center'>
 						<Package className='w-20 h-20 text-gray-600 mx-auto mb-4' />
-						<h3 className='text-xl font-semibold text-gray-400 mb-2'>Ready to track</h3>
-						<p className='text-gray-500'>Enter a tracking number above to get started</p>
+						<h3 className='text-xl font-semibold text-gray-400 mb-2'>{t('tracking.readyToTrack')}</h3>
+						<p className='text-gray-500'>{t('tracking.enterNumber')}</p>
 					</div>
 				)}
 			</div>
