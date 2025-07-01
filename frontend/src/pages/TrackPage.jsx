@@ -5,11 +5,13 @@ import { Package, MapPin, Clock, CheckCircle, Truck, AlertCircle, User, DollarSi
 import LoadingSpinner from "../components/LoadingSpinner";
 import OpenStreetMap from "../components/OpenStreetMap";
 import TrackingPDFGenerator from "../utils/TrackingPDFGenerator.js";
+import { useTranslation } from 'react-i18next';
 
 const TrackPage = () => {
 	const location = useLocation();
 	const [trackingNumber, setTrackingNumber] = useState("");
 	const { currentShipment, loading, trackShipment, clearCurrentShipment } = useShipmentStore();
+	const { t } = useTranslation();
 
 	// Clear current shipment on component mount and unmount
 	useEffect(() => {
@@ -110,7 +112,7 @@ const TrackPage = () => {
 								type="text"
 								value={trackingNumber}
 								onChange={(e) => setTrackingNumber(e.target.value)}
-								placeholder="Enter tracking number (e.g., TN123456789)"
+								placeholder={t('hero.enterTracking')}
 								className='w-full bg-gray-700/50 border border-gray-600/50 rounded-lg px-4 py-3 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:border-transparent transition-all'
 							/>
 						</div>
@@ -121,7 +123,7 @@ const TrackPage = () => {
 						>
 							{loading ? <LoadingSpinner /> : (
 								<>
-									Track
+									{t('hero.trackNow')}
 									<ArrowRight className="w-4 h-4" />
 								</>
 							)}

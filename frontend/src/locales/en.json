@@ -256,6 +256,32 @@
     "address": "Address",
     "googleMap": "Google Map"
   },
+  "tracking": {
+    "currentLocation": "Current Location",
+    "estimatedDelivery": "Estimated Delivery",
+    "history": "Tracking History",
+    "notFound": "No shipment found",
+    "checkNumber": "Please check your tracking number and try again",
+    "readyToTrack": "Ready to track",
+    "enterNumber": "Enter a tracking number above to get started"
+  },
+  "shipping": {
+    "from": "From",
+    "to": "To",
+    "packageDetails": "Package Details",
+    "serviceDetails": "Service Details",
+    "description": "Description",
+    "category": "Category",
+    "weight": "Weight",
+    "value": "Value",
+    "dimensions": "Dimensions",
+    "fragile": "Fragile",
+    "priority": "Priority",
+    "cost": "Shipping Cost",
+    "date": "Shipping Date",
+    "signatureRequired": "Signature Required",
+    "specialInstructions": "Special Instructions"
+  },
   "team": {
     "hero": {
       "title": "Meet Our",

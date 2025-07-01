@@ -256,6 +256,32 @@
     "address": "Alamat",
     "googleMap": "Peta Google"
   },
+  "tracking": {
+    "currentLocation": "Lokasi Semasa",
+    "estimatedDelivery": "Anggaran Penghantaran",
+    "history": "Sejarah Penjejakan",
+    "notFound": "Tiada penghantaran dijumpai",
+    "checkNumber": "Sila semak nombor penjejakan anda dan cuba lagi",
+    "readyToTrack": "Sedia untuk jejak",
+    "enterNumber": "Masukkan nombor penjejakan di atas untuk bermula"
+  },
+  "shipping": {
+    "from": "Dari",
+    "to": "Kepada",
+    "packageDetails": "Butiran Pakej",
+    "serviceDetails": "Butiran Perkhidmatan",
+    "description": "Keterangan",
+    "category": "Kategori",
+    "weight": "Berat",
+    "value": "Nilai",
+    "dimensions": "Dimensi",
+    "fragile": "Mudah Pecah",
+    "priority": "Keutamaan",
+    "cost": "Kos Penghantaran",
+    "date": "Tarikh Penghantaran",
+    "signatureRequired": "Tandatangan Diperlukan",
+    "specialInstructions": "Arahan Khas"
+  },
   "team": {
     "hero": {
       "title": "Kenali",

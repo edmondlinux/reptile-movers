@@ -256,6 +256,32 @@
     "address": "주소",
     "googleMap": "구글 지도"
   },
+  "tracking": {
+    "currentLocation": "현재 위치",
+    "estimatedDelivery": "예상 배송일",
+    "history": "추적 기록",
+    "notFound": "배송을 찾을 수 없습니다",
+    "checkNumber": "추적 번호를 확인하고 다시 시도해 주세요",
+    "readyToTrack": "추적 준비",
+    "enterNumber": "시작하려면 위에 추적 번호를 입력하세요"
+  },
+  "shipping": {
+    "from": "발신인",
+    "to": "수신인",
+    "packageDetails": "패키지 세부사항",
+    "serviceDetails": "서비스 세부사항",
+    "description": "설명",
+    "category": "카테고리",
+    "weight": "무게",
+    "value": "가치",
+    "dimensions": "치수",
+    "fragile": "깨지기 쉬운",
+    "priority": "우선순위",
+    "cost": "배송비",
+    "date": "배송일",
+    "signatureRequired": "서명 필요",
+    "specialInstructions": "특별 지시사항"
+  },
   "team": {
     "hero": {
       "title": "저희",

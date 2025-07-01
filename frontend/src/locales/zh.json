@@ -256,6 +256,32 @@
     "address": "地址",
     "googleMap": "谷歌地图"
   },
+  "tracking": {
+    "currentLocation": "当前位置",
+    "estimatedDelivery": "预计送达",
+    "history": "追踪历史",
+    "notFound": "未找到货物",
+    "checkNumber": "请检查您的追踪号码并重试",
+    "readyToTrack": "准备追踪",
+    "enterNumber": "在上方输入追踪号码开始"
+  },
+  "shipping": {
+    "from": "发件人",
+    "to": "收件人",
+    "packageDetails": "包裹详情",
+    "serviceDetails": "服务详情",
+    "description": "描述",
+    "category": "类别",
+    "weight": "重量",
+    "value": "价值",
+    "dimensions": "尺寸",
+    "fragile": "易碎品",
+    "priority": "优先级",
+    "cost": "运费",
+    "date": "发货日期",
+    "signatureRequired": "需要签收",
+    "specialInstructions": "特殊说明"
+  },
   "team": {
     "hero": {
       "title": "认识我们的",
