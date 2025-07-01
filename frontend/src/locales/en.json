@@ -163,5 +163,50 @@
     "description": "Connect with Asian markets through Europe's premier reptile transportation specialists.",
     "getQuote": "Get Shipping Quote",
     "email": "email: support@reptilemovers.site"
+  },
+  "contact": {
+    "title": "Contact Us",
+    "subtitle": "Get in Touch with Our Reptile Shipping Experts",
+    "description": "Ready to ship your reptiles safely across Europe and Asia? Contact our specialized team for personalized quotes and expert guidance.",
+    "form": {
+      "name": "Name",
+      "namePlaceholder": "Your full name",
+      "email": "Email",
+      "emailPlaceholder": "your.email@example.com",
+      "phone": "Phone",
+      "phonePlaceholder": "Your phone number",
+      "subject": "Subject",
+      "subjectPlaceholder": "What can we help you with?",
+      "message": "Message",
+      "messagePlaceholder": "Tell us about your reptile shipping needs...",
+      "submit": "Send Message",
+      "sending": "Sending...",
+      "success": "Message sent successfully!",
+      "error": "Failed to send message. Please try again."
+    },
+    "info": {
+      "title": "Contact Information",
+      "address": "123 Logistics Avenue, Amsterdam, Netherlands",
+      "phone": "+31 20 123 4567",
+      "email": "support@reptilemovers.site",
+      "hours": "Mon-Fri: 8:00 AM - 6:00 PM CET"
+    },
+    "specialties": {
+      "title": "Our Specialties",
+      "climateControl": "Climate-controlled reptile transport",
+      "documentation": "Complete CITES documentation",
+      "quarantine": "Certified quarantine facilities",
+      "network": "Europe to Asia shipping network"
+    }
+  },
+  "gallery": {
+    "title": "Our Work in Action",
+    "description": "See our professional reptile transportation facilities and operations in Europe and Asia",
+    "climateVehicles": "Climate-Controlled Vehicles",
+    "quarantineFacilities": "Quarantine Facilities",
+    "expertHandling": "Expert Reptile Handling",
+    "asianNetwork": "Asian Distribution Network",
+    "breedingPartners": "Breeding Partners",
+    "documentation": "CITES Documentation"
   }
 }

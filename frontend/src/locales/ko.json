@@ -163,5 +163,50 @@
     "description": "유럽 최고의 파충류 운송 전문가를 통해 아시아 시장과 연결하세요.",
     "getQuote": "배송 견적 받기",
     "email": "이메일: support@reptilemovers.site"
+  },
+  "contact": {
+    "title": "연락처",
+    "subtitle": "파충류 배송 전문가와 연락하기",
+    "description": "유럽과 아시아 전역에 파충류를 안전하게 배송할 준비가 되셨나요? 맞춤 견적과 전문가 안내를 위해 전문 팀에 문의하세요.",
+    "form": {
+      "name": "이름",
+      "namePlaceholder": "전체 이름",
+      "email": "이메일",
+      "emailPlaceholder": "your.email@example.com",
+      "phone": "전화번호",
+      "phonePlaceholder": "전화번호",
+      "subject": "제목",
+      "subjectPlaceholder": "무엇을 도와드릴까요?",
+      "message": "메시지",
+      "messagePlaceholder": "파충류 배송 요구사항을 알려주세요...",
+      "submit": "메시지 보내기",
+      "sending": "전송 중...",
+      "success": "메시지가 성공적으로 전송되었습니다!",
+      "error": "메시지 전송에 실패했습니다. 다시 시도해주세요."
+    },
+    "info": {
+      "title": "연락처 정보",
+      "address": "123 Logistics Avenue, Amsterdam, Netherlands",
+      "phone": "+31 20 123 4567",
+      "email": "support@reptilemovers.site",
+      "hours": "월-금: 오전 8:00 - 오후 6:00 CET"
+    },
+    "specialties": {
+      "title": "우리의 전문 분야",
+      "climateControl": "온도 조절 파충류 운송",
+      "documentation": "완전한 CITES 문서 작업",
+      "quarantine": "인증된 검역 시설",
+      "network": "유럽-아시아 배송 네트워크"
+    }
+  },
+  "gallery": {
+    "title": "우리의 실제 작업",
+    "description": "유럽과 아시아에서 우리의 전문 파충류 운송 시설과 운영을 확인하세요",
+    "climateVehicles": "온도 조절 차량",
+    "quarantineFacilities": "검역 시설",
+    "expertHandling": "전문 파충류 처리",
+    "asianNetwork": "아시아 유통 네트워크",
+    "breedingPartners": "사육 파트너",
+    "documentation": "CITES 문서 작업"
   }
 }

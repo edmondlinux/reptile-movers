@@ -163,5 +163,50 @@
     "description": "通过欧洲顶级爬虫运输专家连接亚洲市场。",
     "getQuote": "获取运输报价",
     "email": "邮箱: support@reptilemovers.site"
+  },
+  "contact": {
+    "title": "联系我们",
+    "subtitle": "与我们的爬虫运输专家取得联系",
+    "description": "准备安全地将您的爬虫运输到欧洲和亚洲？联系我们的专业团队获取个性化报价和专家指导。",
+    "form": {
+      "name": "姓名",
+      "namePlaceholder": "您的全名",
+      "email": "邮箱",
+      "emailPlaceholder": "your.email@example.com",
+      "phone": "电话",
+      "phonePlaceholder": "您的电话号码",
+      "subject": "主题",
+      "subjectPlaceholder": "我们能为您做什么？",
+      "message": "消息",
+      "messagePlaceholder": "告诉我们您的爬虫运输需求...",
+      "submit": "发送消息",
+      "sending": "发送中...",
+      "success": "消息发送成功！",
+      "error": "发送失败。请重试。"
+    },
+    "info": {
+      "title": "联系信息",
+      "address": "荷兰阿姆斯特丹物流大道123号",
+      "phone": "+31 20 123 4567",
+      "email": "support@reptilemovers.site",
+      "hours": "周一至周五：上午8:00 - 下午6:00 中欧时间"
+    },
+    "specialties": {
+      "title": "我们的专业",
+      "climateControl": "温控爬虫运输",
+      "documentation": "完整的CITES文件",
+      "quarantine": "认证检疫设施",
+      "network": "欧洲至亚洲运输网络"
+    }
+  },
+  "gallery": {
+    "title": "我们的工作实况",
+    "description": "查看我们在欧洲和亚洲的专业爬虫运输设施和运营",
+    "climateVehicles": "温控车辆",
+    "quarantineFacilities": "检疫设施",
+    "expertHandling": "专业爬虫处理",
+    "asianNetwork": "亚洲分销网络",
+    "breedingPartners": "繁殖合作伙伴",
+    "documentation": "CITES文件"
   }
 }
