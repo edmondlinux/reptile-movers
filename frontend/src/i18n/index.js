@@ -32,8 +32,21 @@ i18n
     debug: false,
     
     detection: {
-      order: ['localStorage', 'navigator', 'htmlTag'],
-      caches: ['localStorage']
+      order: ['localStorage', 'navigator', 'htmlTag', 'path', 'subdomain'],
+      lookupLocalStorage: 'i18nextLng',
+      lookupFromPathIndex: 0,
+      lookupFromSubdomainIndex: 0,
+      caches: ['localStorage'],
+      excludeCacheFor: ['cimode'], // languages to not persist (only cookie)
+      convertDetectedLanguage: (lng) => {
+        // Extract the primary language code from browser locale (e.g., 'en-US' -> 'en')
+        const primaryLng = lng.split('-')[0].toLowerCase();
+        
+        // Check if we support this language
+        const supportedLanguages = ['en', 'zh', 'ms', 'ko', 'fr', 'es', 'de', 'nl'];
+        
+        return supportedLanguages.includes(primaryLng) ? primaryLng : 'en';
+      }
     },
 
     interpolation: {
